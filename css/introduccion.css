@@ -1,0 +1,157 @@
+.t-intro{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #AD3636;
+}
+
+iframe{
+    width: 460px;
+    height: 250px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.t-plan{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    color: #AD3636;
+}
+.modulo1{
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-1{
+   display: flex;
+   justify-content: center;
+}
+
+.img-plan{
+    margin-left: 0px;
+    width: 160px;
+}
+
+.des-plan{
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.modulo2{
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-plan2{
+    margin-left: 0px;
+    width: 160px;
+}
+
+.des-plan2{
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tit-plan{
+    color: black;
+}
+
+.icon-mod{
+    color: #AD3636;
+}
+
+.enlace{
+    color: black;
+    text-decoration: none;
+}
+@media(max-width:576px){
+    
+    iframe{
+        width: 230px;
+        height: 115px;
+}
+}
+
+@media(min-width:992px){
+    
+    iframe{
+    width: 560px;
+    height: 315px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.t-plan{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.modulo1{
+    display: flex;
+    flex-direction: row;
+}
+
+.modulo2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.img-1{
+   display: flex;
+   justify-content: center;
+}
+
+.img-plan{
+    margin-left: 220px;
+    width: 160px;
+}
+
+.des-plan{
+    display: flex;
+    margin: 0;
+    text-align: start;
+}
+
+.img-plan2{
+    margin-left: 0px;
+    margin-right: 220px;
+    width: 160px;
+}
+
+.des-plan2{
+    display: flex;
+    margin: 0;
+    text-align: end;
+}
+
+}
+
+.sig{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.t-sig{
+    font-size: 35px;
+}
+
+.flech{
+    font-size: 40px;
+    color:#AD3636;
+}

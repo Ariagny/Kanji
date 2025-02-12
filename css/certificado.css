@@ -1,0 +1,109 @@
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.cont{
+    background:  #AD3636;
+    box-shadow: 3px 3px 5px #636363;
+}
+
+.T-intro{
+    color: white;
+}
+
+.actividades{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 30px;
+}
+
+.acti{
+    color: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(90px);
+    border-radius: 15px;
+    padding: 10px 15px;
+}
+
+.acti2{
+    color: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(90px);
+    border-radius: 15px;
+    padding: 10px 15px;
+}
+
+.estado{
+    width: 110px;
+    text-align: center;
+}
+
+.t-btn{
+    text-align: center;
+}
+
+.btn-des{
+    width: 110px;
+    height: 30px;
+    background-color: #4b4b4b;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+@media(min-width:992px){
+    .acti{
+        color: rgb(255, 255, 255);
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        backdrop-filter: blur(90px);
+        border-radius: 15px;
+        padding: 0 15px;
+    }
+    
+    .acti2{
+        color: rgb(255, 255, 255);
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        backdrop-filter: blur(90px);
+        border-radius: 15px;
+        padding: 0 15px;
+    }
+    
+    .estado{
+        width: 110px;
+        text-align: center;
+    }
+
+    .t-btn{
+        text-align: start;
+        margin-left: 0px;
+    }
+}

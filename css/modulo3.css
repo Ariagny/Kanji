@@ -1,0 +1,76 @@
+.introduc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.t-intro{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #AD3636;
+}
+
+iframe{
+    width: 460px;
+    height: 250px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+.enlace-pdf{
+    font-size: 15px;
+    margin-top: 60px;
+    color: #AD3636;
+    text-decoration:underline;
+}
+
+.sig{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.t-sig{
+    font-size: 25px;
+}
+
+.flech{
+    font-size: 40px;
+    color:#AD3636;
+}
+
+@media(max-width:576px){
+    
+    iframe{
+        width: 230px;
+        height: 115px;
+}
+}
+
+@media(min-width:992px){
+    
+    iframe{
+    width: 560px;
+    height: 315px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.enlace-pdf{
+    font-size: 25px;
+}
+
+.sig{
+    margin-top: 100px;
+}
+
+.t-sig{
+    font-size: 35px;
+}
+}
+

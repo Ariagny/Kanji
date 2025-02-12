@@ -1,0 +1,32 @@
+.t-intro{
+    margin-top: 50px;
+    color: #AD3636;
+}
+
+.exa{
+    margin-top: 50px;
+}
+
+.archivo{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.btn-exa{
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-examen{
+        width: 100px;
+        background-color: #AD3636;
+        border: none;
+        outline: none;
+        border-radius: 45px;
+        font-size:15px ;
+        color: white;
+        font-weight: 600;
+        height: 40px;
+}
