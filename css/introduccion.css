@@ -12,6 +12,26 @@ iframe{
     justify-content: center;
 }
 
+.des-1{
+    width: 80%;
+    margin: 5px auto 15px  auto;
+}
+
+.des-2{
+    width: 80%;
+    margin: 5px auto 15px  auto;
+}
+
+.des-3{
+    width: 80%;
+    margin: 5px auto 15px  auto;
+}
+
+.des-4{
+    width: 80%;
+    margin: 5px auto 15px  auto;
+}
+
 .t-plan{
     margin-top: 50px;
     margin-bottom: 0px;
@@ -76,6 +96,11 @@ iframe{
     color: black;
     text-decoration: none;
 }
+
+.mod-4{
+    margin-left: 0px;
+}
+
 @media(max-width:576px){
     
     iframe{
@@ -135,6 +160,30 @@ iframe{
     display: flex;
     margin: 0;
     text-align: end;
+}
+
+.des-1{
+    width: 80%;
+    margin: 5px  0px 15px 0px  ;
+}
+
+.des-2{
+    width: 80%;
+    margin: 5px  0px 15px 145px  ;
+}
+
+.des-3{
+    width: 80%;
+    margin: 5px  0px 15px 0px  ;
+}
+
+.des-4{
+    width: 80%;
+    margin: 5px  0px 15px 145px  ;
+}
+
+.mod-4{
+    margin-left: 120px;
 }
 
 }
