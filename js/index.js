@@ -6,6 +6,8 @@ const btnRegistroSesion = document.querySelector(".nav-link5");
 const SaludoUsuario = document.querySelector(".nav-link6");
 const btnUsuario = document.querySelector(".nav-link7");
 const btnlist = document.querySelector(".nav-list");
+const BarrraNav = document.querySelector("#navbarNav");
+
 
 let currentUser = JSON.parse(localStorage.getItem('user'));
 
@@ -24,8 +26,9 @@ function verificarSesion(){
         SaludoUsuario.textContent = '';
         btnIniciarSesion.style.display = 'flex';
         btnRegistroSesion.style.display = 'flex';
-        btnlist.classList.add('d-none')
-        btnlist.classList.remove('d-flex')
+        btnlist.classList.add('d-none');
+        btnlist.classList.remove('d-flex');
+        BarrraNav.style.justifyContent = "right"
 
     }
 }
