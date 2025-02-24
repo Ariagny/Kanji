@@ -1,3 +1,106 @@
+/* barra menu */
+.heade{
+    background-color: #7f1b33;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-logo{
+    width: 100px;
+    margin: 10px 0 0 15px;
+}
+#navbarNav{
+    justify-content: space-between;
+}
+
+#navbarNav a{
+    color: white;
+}
+
+.btn-nav{
+    color: white;
+}
+
+.nav-link1{
+    margin: auto 5px;
+    
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-link2{
+    margin: auto 5px;
+    
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-link3{
+    margin: auto 5px;
+    
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-link4{
+    margin: auto 5px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-link5{
+    margin: auto 5px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-link6{
+    margin: auto 5px;
+    color: white;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-list{
+    margin: auto 5px;
+    color: white;
+    font-size: large;
+    display: none;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-link7{
+    margin: auto 5px;
+    display: none;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-ini{
+    margin-right: 5px;
+}
+
+.nav-in{
+    display: flex;
+    margin-right: 5px;
+    font-size: 35px;
+}
+
+.nav-reg{
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
 .t-intro{
     margin-top: 50px;
     margin-bottom: 50px;
@@ -204,3 +307,73 @@ iframe{
     font-size: 40px;
     color:#AD3636;
 }
+
+/* footer */
+
+.footer{
+    margin-top: 100px;
+    background-color: #fc785af0;
+}
+
+.foot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo-fo{
+    display: flex;
+    justify-content: center;
+}
+.img-logof{
+    width: 50px;
+    margin: 10px 0 0 15px;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.redes a{
+    font-size: 35px;
+    transition: 0.5s;
+}
+
+.Yout{
+color: rgb(255, 255, 255);
+}
+
+.Tik{
+color: rgb(255, 255, 255);
+}
+
+.Whats{
+    color: rgb(255, 255, 255);
+}
+
+.Ins{
+color: rgb(255, 255, 255);
+}
+
+.redes a:hover{
+    transform: scale(1.4);
+}
+
+.btn-sugerencia{
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+@media(min-width:992px){
+    
+    .foot{
+        flex-direction: row;
+    }  
+}
+
