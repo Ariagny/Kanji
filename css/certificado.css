@@ -1,109 +1,145 @@
-.container{
+/* barra menu */
+.heade{
+    background-color: #7f1b33;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: auto;
+    justify-content: space-between;
 }
 
-.cont{
-    background:  #AD3636;
-    box-shadow: 3px 3px 5px #636363;
+.img-logo{
+    width: 100px;
+    margin: 10px 0 0 15px;
+}
+#navbarNav{
+    justify-content: space-between;
 }
 
-.T-intro{
+#navbarNav a{
     color: white;
 }
 
-.actividades{
-    width: 100%;
+.btn-nav{
+    color: white;
+}
+
+.nav-link1{
+    margin: auto 5px;
+    
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-link2{
+    margin: auto 5px;
+    
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-link3{
+    margin: auto 5px;
+    
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-link4{
+    margin: auto 5px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 5px;
-    margin-top: 30px;
+    text-decoration: none;
 }
 
-.acti{
-    color: rgb(255, 255, 255);
-    width: 100%;
+.nav-link5{
+    margin: auto 5px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    backdrop-filter: blur(90px);
-    border-radius: 15px;
-    padding: 10px 15px;
+    text-decoration: none;
 }
 
-.acti2{
-    color: rgb(255, 255, 255);
-    width: 100%;
+.nav-link6{
+    margin: auto 5px;
+    color: white;
+    font-size: large;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    backdrop-filter: blur(90px);
-    border-radius: 15px;
-    padding: 10px 15px;
+    text-decoration: none;
 }
 
-.estado{
-    width: 110px;
-    text-align: center;
+.nav-list{
+    margin: auto 5px;
+    color: white;
+    font-size: large;
+    display: none;
+    align-items: center;
+    text-decoration: none;
 }
 
-.t-btn{
-    text-align: center;
+.nav-link7{
+    margin: auto 5px;
+    display: none;
+    align-items: center;
+    text-decoration: none;
 }
 
-.btn-des{
-    width: 110px;
-    height: 30px;
+.nav-ini{
+    margin-right: 5px;
+}
+
+.nav-in{
+    display: flex;
+    margin-right: 5px;
+    font-size: 35px;
+}
+
+.nav-reg{
+    margin-right: 5px;
+}
+
+
+
+
+.porce{
+    margin-bottom: 65px;
+}
+.porcentajes{
+    width: 800px;
+    height: 600px;
+}
+
+.tit{
+    display: flex;
+    text-align: left;
+}
+  
+  .avatar-container img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+  }
+  
+  /* Barras de progreso más llamativas */
+  .progress-custom {
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .progress-bar {
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .btn-des{
     background-color: #4b4b4b;
     border: none;
-    outline: none;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    cursor: pointer;
-    font-size: 16px;
-    color: #ffffff;
-    font-weight: 600;
-    margin-left: 10px;
-}
+    color: white;
+    padding: 5px 5px;
+  }
 
-@media(min-width:992px){
-    .acti{
-        color: rgb(255, 255, 255);
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        backdrop-filter: blur(90px);
-        border-radius: 15px;
-        padding: 0 15px;
-    }
-    
-    .acti2{
-        color: rgb(255, 255, 255);
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        backdrop-filter: blur(90px);
-        border-radius: 15px;
-        padding: 0 15px;
-    }
-    
-    .estado{
-        width: 110px;
-        text-align: center;
-    }
-
-    .t-btn{
-        text-align: start;
-        margin-left: 0px;
-    }
-}
+  .progreso{
+    background: -webkit-linear-gradient(to right, #fc785af0, #d8363a,#AD3636, #7f1b33);
+  }
+  
+ 
