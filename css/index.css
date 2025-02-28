@@ -81,6 +81,13 @@
     text-decoration: none;
 }
 
+.nav-link8{
+    margin: auto 5px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
 .nav-ini{
     margin-right: 5px;
 }
