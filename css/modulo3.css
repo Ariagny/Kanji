@@ -70,7 +70,6 @@
     color: white;
     font-size: large;
     display: none;
-    align-items: center;
     text-decoration: none;
 }
 
@@ -112,8 +111,12 @@
     align-items: center;
 }
 .t-intro{
-    margin-top: 50px;
     margin-bottom: 50px;
+    color: #000000;
+}
+
+.t-tit{
+    margin-top: 50px;
     color: #AD3636;
 }
 
