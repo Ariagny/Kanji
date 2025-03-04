@@ -65,7 +65,8 @@ function IngresarModulo1(){
          window.location = "../vistas/inicio-sesion.html"
      }
 }
-MODU1.addEventListener("click", IngresarModulo1);
+/* MODU1.addEventListener("click", IngresarModulo1); */
+
 
 function IngresarModulo2(){
     /*  let currentUser = JSON.parse(localStorage.getItem('user')); */
