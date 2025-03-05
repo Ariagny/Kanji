@@ -101,7 +101,50 @@
     margin-right: 5px;
 }
 
+.sect{
+    filter: blur(15px);
+}
 
+
+.popup {
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.popup-caja{
+    border-radius: 10px;
+    padding: 150px 0px;
+    min-width: 400px;
+    width: 40%;
+    border: 1px solid #888888;
+    box-shadow: 5px 10px 8px #888888;
+    background: linear-gradient(to right, #fc785af0, #d8363a, #AD3636, #7f1b33);;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 149px auto;
+}
+
+.pop-btn{
+    margin-top: 25px;
+    border-radius: 15px;
+    padding: 10px 15px;
+    border: 2px solid white;
+    background-color: white;
+    color: rgb(133, 50, 50);
+    font-weight: 600;
+}
+
+.pop-text{
+    text-align: center;
+    margin: 0 10px 0 10px;
+}
 
 
 .introduc{
@@ -154,21 +197,29 @@ iframe{
 }
 
 @media(max-width:576px){
-    
+    .popup-caja{
+        min-width: 0px;
+        padding: 100px 0px;
+        width: 70%;
+        margin: 100px auto;
+    }
+
     iframe{
         width: 230px;
         height: 115px;
+        cursor: not-allowed;
 }
 }
 
 @media(min-width:992px){
-    
+
     iframe{
-    width: 560px;
-    height: 315px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
+        width: 560px;
+        height: 315px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        cursor: not-allowed;
 }
 
 .enlace-pdf{

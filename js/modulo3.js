@@ -44,3 +44,32 @@ function cerrarSesion (){
 
 
 document.addEventListener('DOMContentLoaded', verificarSesion);
+
+//Validar usuario
+
+const PopUp = document.querySelector(".popup");
+const Sect = document.querySelector(".sect");
+const BtnDescargar = document.querySelector(".enlace-pdf");
+const BtnExa = document.querySelector(".flech");
+
+function AccesoModulos(){
+    /*  let currentUser = JSON.parse(localStorage.getItem('user')); */
+ 
+     if (currentUser){
+         //si hay un usuario logueado, mostrarsu nombre y ocultar botones
+         
+         PopUp.style.display = 'none';
+         Sect.style.filter = 'none';
+         BtnDescargar.style.cursor = 'Pointer';
+         BtnExa.style.cursor = 'Pointer';  
+     }else {
+         //si no hay usuario logueado, mostrar los botones y ocultar el nombre
+         PopUp.style.display = 'flex';
+         Sect.style.filter = 'blur(15px)';
+         BtnDescargar.style.cursor = 'not-allowed';
+         BtnExa.style.cursor = 'not-allowed';  
+ 
+     }
+ }
+
+ document.addEventListener('DOMContentLoaded', AccesoModulos);

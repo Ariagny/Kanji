@@ -61,7 +61,7 @@ function IngresarModulo1(){
          window.location = "./vistas/inicio-sesion.html"
      }
 }
-MODU1.addEventListener("click", IngresarModulo1);
+/* MODU1.addEventListener("click", IngresarModulo1); */
 
 
 
@@ -76,7 +76,7 @@ function IngresarModulo2(){
          window.location = "./vistas/inicio-sesion.html"
      }
 }
-MODU2.addEventListener("click", IngresarModulo2);
+/* MODU2.addEventListener("click", IngresarModulo2); */
 
 
 
@@ -92,4 +92,4 @@ function IngresarModulo3(){
          window.location = "./vistas/inicio-sesion.html"
      }
 }
-MODU3.addEventListener("click", IngresarModulo3);
+/* MODU3.addEventListener("click", IngresarModulo3); */

@@ -79,7 +79,7 @@ function IngresarModulo2(){
          window.location = "../vistas/inicio-sesion.html"
      }
 }
-MODU2.addEventListener("click", IngresarModulo2);
+/* MODU2.addEventListener("click", IngresarModulo2); */
 
 function IngresarModulo3(){
     /*  let currentUser = JSON.parse(localStorage.getItem('user')); */
@@ -92,7 +92,7 @@ function IngresarModulo3(){
          window.location = "../vistas/inicio-sesion.html"
      }
 }
-MODU3.addEventListener("click", IngresarModulo3);
+/* MODU3.addEventListener("click", IngresarModulo3); */
 
 function IngresarExamen1(){
     /*  let currentUser = JSON.parse(localStorage.getItem('user')); */
