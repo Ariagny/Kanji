@@ -12,6 +12,7 @@ function registrarUser(e){
         userP: Password.value,
         userC: Correo.value,
         userA: Apellidos.value,
+        userLogged: false
     }
     //enviar información a local storage
     localStorage.setItem("user", JSON.stringify(user));   

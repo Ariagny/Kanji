@@ -10,6 +10,8 @@ function validarUsuario (e){
     let currentUser = JSON.parse(localStorage.getItem("user"));
 
 if (Username.value === currentUser.userN && Password.value === currentUser.userP){
+    currentUser.userLogged = true
+    localStorage.setItem("user", JSON.stringify(currentUser))
     window.location = "../index.html"
 }else {
   alert("El usuario o la contraseña es incorrecta");

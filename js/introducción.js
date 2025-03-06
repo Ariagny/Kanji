@@ -15,8 +15,9 @@ let currentUser = JSON.parse(localStorage.getItem('user'));
 //verifica si el usuario esta registrado
 function verificarSesion(){
    /*  let currentUser = JSON.parse(localStorage.getItem('user')); */
+   let confirmarSesion = currentUser ? currentUser.userLogged : false
 
-    if (currentUser){
+    if (confirmarSesion){
         //si hay un usuario logueado, mostrarsu nombre y ocultar botones
         SaludoUsuario.textContent =`Hola, ${currentUser.userN}`;
         btnIniciarSesion.style.display = 'none';
