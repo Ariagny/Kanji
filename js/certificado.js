@@ -40,8 +40,10 @@ document.addEventListener('DOMContentLoaded', verificarSesion);
 const NombreU = document.querySelector(".NombreU");
 
 //verifica si el usuario esta registrado
+let confirmarSesion = currentUser ? currentUser.userLogged : false
+
 function NombreUsuario(){
-    if (currentUser){
+    if (confirmarSesion){
         //si hay un usuario logueado, mostrarsu nombre y ocultar botones
         NombreU.textContent =`${currentUser.userN}`;
     }else {

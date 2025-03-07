@@ -1,6 +1,10 @@
 /* barra menu */
-.heade{
+.cont{
     background-color: #7f1b33;
+}
+.heade{
+    margin: auto;
+    max-width: 2000px;
     display: flex;
     justify-content: space-between;
 }
@@ -118,6 +122,7 @@
     border-radius: 10px;
     padding: 150px 0px;
     min-width: 400px;
+    max-width: 900px;
     width: 40%;
     border: 1px solid #888888;
     box-shadow: 5px 10px 8px #888888;

@@ -1,6 +1,10 @@
 /* barra menu */
-.heade{
+.cont{
     background-color: #7f1b33;
+}
+.heade{
+    margin: auto;
+    max-width: 2000px;
     display: flex;
     justify-content: space-between;
 }
@@ -117,6 +121,7 @@
 .popup-caja{
     border-radius: 10px;
     padding: 150px 0px;
+    max-width: 900px;
     min-width: 400px;
     width: 40%;
     border: 1px solid #888888;

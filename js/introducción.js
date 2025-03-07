@@ -47,57 +47,19 @@ function cerrarSesion (){
 document.addEventListener('DOMContentLoaded', verificarSesion);
 
 //Ingresar a los módulos solo si esta logueado
-const MODU1 = document.querySelector(".mod1");
-const MODU2 = document.querySelector(".mod2");
-const MODU3 = document.querySelector(".mod3");
+
 const EXA1 = document.querySelector(".exa1");
 const EXA2 = document.querySelector(".exa2");
 const EXA3 = document.querySelector(".exa3");
 const EXAF = document.querySelector(".exaf");
 
-function IngresarModulo1(){
-    /*  let currentUser = JSON.parse(localStorage.getItem('user')); */
-     if (currentUser){
-         //si hay un usuario logueado, ir al modulo 1
-         window.location = "../vistas/modulo1.html"
 
-     }else {
-         //si no hay usuario logueado, mostrar los botones y ocultar el nombre
-         window.location = "../vistas/inicio-sesion.html"
-     }
-}
-/* MODU1.addEventListener("click", IngresarModulo1); */
-
-
-function IngresarModulo2(){
-    /*  let currentUser = JSON.parse(localStorage.getItem('user')); */
-     if (currentUser){
-         //si hay un usuario logueado, ir al modulo 1
-         window.location = "../vistas/modulo2.html"
-
-     }else {
-         //si no hay usuario logueado, mostrar los botones y ocultar el nombre
-         window.location = "../vistas/inicio-sesion.html"
-     }
-}
-/* MODU2.addEventListener("click", IngresarModulo2); */
-
-function IngresarModulo3(){
-    /*  let currentUser = JSON.parse(localStorage.getItem('user')); */
-     if (currentUser){
-         //si hay un usuario logueado, ir al modulo 1
-         window.location = "../vistas/modulo3.html"
-
-     }else {
-         //si no hay usuario logueado, mostrar los botones y ocultar el nombre
-         window.location = "../vistas/inicio-sesion.html"
-     }
-}
-/* MODU3.addEventListener("click", IngresarModulo3); */
 
 function IngresarExamen1(){
     /*  let currentUser = JSON.parse(localStorage.getItem('user')); */
-     if (currentUser){
+    let confirmarSesion = currentUser ? currentUser.userLogged : false
+
+     if (confirmarSesion){
          //si hay un usuario logueado, ir al modulo 1
          window.location = "../vistas/examen1.html"
 
@@ -108,22 +70,13 @@ function IngresarExamen1(){
 }
 EXA1.addEventListener("click", IngresarExamen1);
 
-function IngresarExamen1(){
-    /*  let currentUser = JSON.parse(localStorage.getItem('user')); */
-     if (currentUser){
-         //si hay un usuario logueado, ir al modulo 1
-         window.location = "../vistas/examen1.html"
 
-     }else {
-         //si no hay usuario logueado, mostrar los botones y ocultar el nombre
-         window.location = "../vistas/inicio-sesion.html"
-     }
-}
-EXA1.addEventListener("click", IngresarExamen1);
 
 function IngresarExamen2(){
     /*  let currentUser = JSON.parse(localStorage.getItem('user')); */
-     if (currentUser){
+    let confirmarSesion = currentUser ? currentUser.userLogged : false
+
+     if (confirmarSesion){
          //si hay un usuario logueado, ir al modulo 1
          window.location = "../vistas/examen2.html"
 
@@ -136,7 +89,9 @@ EXA2.addEventListener("click", IngresarExamen2);
 
 function IngresarExamen3(){
     /*  let currentUser = JSON.parse(localStorage.getItem('user')); */
-     if (currentUser){
+    let confirmarSesion = currentUser ? currentUser.userLogged : false
+
+     if (confirmarSesion){
          //si hay un usuario logueado, ir al modulo 1
          window.location = "../vistas/examen3.html"
 
@@ -149,7 +104,9 @@ EXA3.addEventListener("click", IngresarExamen3);
 
 function IngresarExamenF(){
     /*  let currentUser = JSON.parse(localStorage.getItem('user')); */
-     if (currentUser){
+    let confirmarSesion = currentUser ? currentUser.userLogged : false
+
+     if (confirmarSesion){
          //si hay un usuario logueado, ir al modulo 1
          window.location = "../vistas/examen-final.html"
 

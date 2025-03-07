@@ -1,6 +1,10 @@
 /* barra menu */
-.heade{
+.cont{
     background-color: #7f1b33;
+}
+.heade{
+    margin: auto;
+    max-width: 2000px;
     display: flex;
     justify-content: space-between;
 }
@@ -212,6 +216,16 @@ iframe{
     margin-left: 0px;
 }
 
+
+.sig {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
 @media(max-width:576px){
     
     iframe{
@@ -236,13 +250,21 @@ iframe{
 }
 
 .modulo1{
+
     display: flex;
     flex-direction: row;
+    max-width: 1500px;
+    align-items: center;
+    margin: auto;
+    
 }
 
 .modulo2{
     display: flex;
     flex-direction: row-reverse;
+    max-width: 1500px;
+    align-items: center;
+    margin: auto;
 }
 
 .img-1{
@@ -269,27 +291,32 @@ iframe{
 
 .des-plan2{
     display: flex;
+    align-items: end;
     margin: 0;
     text-align: end;
 }
 
 .des-1{
-    width: 80%;
+    width: 60%;
+    max-width: 700px;
     margin: 5px  0px 15px 0px  ;
 }
 
 .des-2{
-    width: 80%;
+    width: 60%;
+    max-width: 700px;
     margin: 5px  0px 15px 145px  ;
 }
 
 .des-3{
-    width: 80%;
+    width: 60%;
+    max-width: 700px;
     margin: 5px  0px 15px 0px  ;
 }
 
 .des-4{
-    width: 80%;
+    width: 60%;
+    max-width: 700px;
     margin: 5px  0px 15px 145px  ;
 }
 

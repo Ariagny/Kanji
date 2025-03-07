@@ -55,8 +55,10 @@ const BtnExa = document.querySelector(".flech");
 
 function AccesoModulos(){
     /*  let currentUser = JSON.parse(localStorage.getItem('user')); */
+    let confirmarSesion = currentUser ? currentUser.userLogged : false
+
  
-     if (currentUser){
+     if (confirmarSesion){
          //si hay un usuario logueado, mostrarsu nombre y ocultar botones
          
          PopUp.style.display = 'none';
