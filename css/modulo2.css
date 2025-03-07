@@ -4,7 +4,6 @@
 }
 .heade{
     margin: auto;
-    max-width: 2000px;
     display: flex;
     justify-content: space-between;
 }
