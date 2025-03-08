@@ -50,7 +50,10 @@ btnCerrarSesion.addEventListener("click",cerrarSesion)
 
 //pop-up
 const PopUp = document.querySelector(".popup");
-const Sect = document.querySelector(".sect");
+const Sect1 = document.querySelector(".sect1");
+const Sect2 = document.querySelector(".sect2");
+const Sect3 = document.querySelector(".sect3");
+const Sect4 = document.querySelector(".sect4");
 const Equis = document.querySelector(".equis");
 const Mod1 = document.querySelector(".mod1");
 const Mod2 = document.querySelector(".mod2");
@@ -66,12 +69,18 @@ function AccesoModulo1(){
          //si hay un usuario logueado, mostrarsu nombre y ocultar botones
          
          PopUp.style.display = 'none';
-         Sect.style.filter = 'none';
+         Sect1.style.filter = 'none';
+         Sect2.style.filter = 'none';
+         Sect3.style.filter = 'none';
+         Sect4.style.filter = 'none';
          window,location = "./vistas/modulo1.html"
      }else {
          //si no hay usuario logueado, mostrar los botones y ocultar el nombre
          PopUp.style.display = 'flex';
-         Sect.style.filter = 'blur(15px)';
+         Sect1.style.filter = 'blur(5px)';
+         Sect2.style.filter = 'blur(5px)';
+         Sect3.style.filter = 'blur(5px)';
+         Sect4.style.filter = 'blur(5px)';
      }
  }
 
@@ -82,17 +91,23 @@ function AccesoModulo1(){
     let confirmarSesion = currentUser ? currentUser.userLogged : false
 
  
-     if (confirmarSesion){
-         //si hay un usuario logueado, mostrarsu nombre y ocultar botones
-         
-         PopUp.style.display = 'none';
-         Sect.style.filter = 'none';
-         window,location = "./vistas/modulo2.html"
-     }else {
-         //si no hay usuario logueado, mostrar los botones y ocultar el nombre
-         PopUp.style.display = 'flex';
-         Sect.style.filter = 'blur(15px)';
-     }
+    if (confirmarSesion){
+        //si hay un usuario logueado, mostrarsu nombre y ocultar botones
+        
+        PopUp.style.display = 'none';
+        Sect1.style.filter = 'none';
+        Sect2.style.filter = 'none';
+        Sect3.style.filter = 'none';
+        Sect4.style.filter = 'none';
+        window,location = "./vistas/modulo2.html"
+    }else {
+        //si no hay usuario logueado, mostrar los botones y ocultar el nombre
+        PopUp.style.display = 'flex';
+        Sect1.style.filter = 'blur(5px)';
+        Sect2.style.filter = 'blur(5px)';
+        Sect3.style.filter = 'blur(5px)';
+        Sect4.style.filter = 'blur(5px)';
+    }
  }
 
  Mod2.addEventListener('click', AccesoModulo2);
@@ -103,17 +118,23 @@ function AccesoModulo1(){
     let confirmarSesion = currentUser ? currentUser.userLogged : false
 
  
-     if (confirmarSesion){
-         //si hay un usuario logueado, mostrarsu nombre y ocultar botones
-         
-         PopUp.style.display = 'none';
-         Sect.style.filter = 'none';
-         window,location = "./vistas/modulo3.html"
-     }else {
-         //si no hay usuario logueado, mostrar los botones y ocultar el nombre
-         PopUp.style.display = 'flex';
-         Sect.style.filter = 'blur(15px)';
-     }
+    if (confirmarSesion){
+        //si hay un usuario logueado, mostrarsu nombre y ocultar botones
+        
+        PopUp.style.display = 'none';
+        Sect1.style.filter = 'none';
+        Sect2.style.filter = 'none';
+        Sect3.style.filter = 'none';
+        Sect4.style.filter = 'none';
+        window,location = "./vistas/modulo3.html"
+    }else {
+        //si no hay usuario logueado, mostrar los botones y ocultar el nombre
+        PopUp.style.display = 'flex';
+        Sect1.style.filter = 'blur(5px)';
+        Sect2.style.filter = 'blur(5px)';
+        Sect3.style.filter = 'blur(5px)';
+        Sect4.style.filter = 'blur(5px)';
+    }
  }
 
  Mod3.addEventListener('click', AccesoModulo3);
@@ -122,7 +143,10 @@ function AccesoModulo1(){
  function QuitarPopUp(){
  
     PopUp.style.display = 'none';
-    Sect.style.filter = 'none'; 
+    Sect1.style.filter = 'none'; 
+    Sect2.style.filter = 'none';
+    Sect3.style.filter = 'none';
+    Sect4.style.filter = 'none';
   
  }
 

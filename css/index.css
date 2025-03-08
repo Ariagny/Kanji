@@ -106,7 +106,19 @@
 
 
 /* pop-up */
-.sect{
+.sect1{
+    filter: blur(0px);
+}
+
+.sect2{
+    filter: blur(0px);
+}
+
+.sect3{
+    filter: blur(0px);
+}
+
+.sect4{
     filter: blur(0px);
 }
 
