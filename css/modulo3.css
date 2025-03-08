@@ -119,9 +119,9 @@
 
 .popup-caja{
     border-radius: 10px;
-    padding: 150px 0px;
-    min-width: 400px;
+    padding: 150px 0px 100px 0;
     max-width: 900px;
+    min-width: 400px;
     width: 40%;
     border: 1px solid #888888;
     box-shadow: 5px 10px 8px #888888;
@@ -130,9 +130,24 @@
     font-size: 20px;
     flex-direction: column;
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 149px auto;
+}
+
+.Pop-C1{
+display: flex;
+justify-content: end;
+margin: -120px 30px 50px 0;
+}
+
+.equis{
+    font-size: 30px;
+    color: white;
+}
+.Pop-C2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .pop-btn{
@@ -201,6 +216,13 @@ iframe{
 }
 
 @media(max-width:576px){
+
+    .Pop-C1{
+        display: flex;
+        justify-content: end;
+        margin: -70px 30px 50px 0;
+        }
+        
     .popup-caja{
         min-width: 0px;
         padding: 100px 0px;

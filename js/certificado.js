@@ -7,6 +7,7 @@ const SaludoUsuario = document.querySelector(".nav-link6");
 const btnUsuario = document.querySelector(".nav-link7");
 const btnlist = document.querySelector(".nav-list");
 const BarrraNav = document.querySelector("#navbarNav");
+const btnCerrarSesion = document.querySelector(".nav-link8");
 
 
 let currentUser = JSON.parse(localStorage.getItem('user'));
@@ -21,6 +22,7 @@ function verificarSesion(){
         
         btnIniciarSesion.style.display = 'none';
         btnRegistroSesion.style.display = 'none';
+        btnCerrarSesion.style.display = "flex"  
        
     }else {
         //si no hay usuario logueado, mostrar los botones y ocultar el nombre
@@ -30,12 +32,20 @@ function verificarSesion(){
         btnlist.classList.add('d-none');
         btnlist.classList.remove('d-flex');
         BarrraNav.style.justifyContent = "right"
+        btnCerrarSesion.style.display = "none"
 
     }
 }
 
-
 document.addEventListener('DOMContentLoaded', verificarSesion);
+
+function cerrarSesion (){
+    currentUser.userLogged = false
+    localStorage.setItem("user", JSON.stringify(currentUser))
+    window.location = "../index.html"
+    }
+    
+btnCerrarSesion.addEventListener("click",cerrarSesion)
 
 const NombreU = document.querySelector(".NombreU");
 

@@ -40,9 +40,93 @@ function verificarSesion(){
 document.addEventListener('DOMContentLoaded', verificarSesion);
 
 function cerrarSesion (){
-    window.location = " ./vistas/cerrar.html"
+    currentUser.userLogged = false
+    localStorage.setItem("user", JSON.stringify(currentUser))
+    window.location = "./index.html"
     }
     
-    btnCerrarSesion.addEventListener("click",cerrarSesion)
+btnCerrarSesion.addEventListener("click",cerrarSesion)
+
+
+//pop-up
+const PopUp = document.querySelector(".popup");
+const Sect = document.querySelector(".sect");
+const Equis = document.querySelector(".equis");
+const Mod1 = document.querySelector(".mod1");
+const Mod2 = document.querySelector(".mod2");
+const Mod3 = document.querySelector(".mod3");
+
+
+function AccesoModulo1(){
+    /*  let currentUser = JSON.parse(localStorage.getItem('user')); */
+    let confirmarSesion = currentUser ? currentUser.userLogged : false
+
+ 
+     if (confirmarSesion){
+         //si hay un usuario logueado, mostrarsu nombre y ocultar botones
+         
+         PopUp.style.display = 'none';
+         Sect.style.filter = 'none';
+         window,location = "./vistas/modulo1.html"
+     }else {
+         //si no hay usuario logueado, mostrar los botones y ocultar el nombre
+         PopUp.style.display = 'flex';
+         Sect.style.filter = 'blur(15px)';
+     }
+ }
+
+ Mod1.addEventListener('click', AccesoModulo1);
+
+ function AccesoModulo2(){
+    /*  let currentUser = JSON.parse(localStorage.getItem('user')); */
+    let confirmarSesion = currentUser ? currentUser.userLogged : false
+
+ 
+     if (confirmarSesion){
+         //si hay un usuario logueado, mostrarsu nombre y ocultar botones
+         
+         PopUp.style.display = 'none';
+         Sect.style.filter = 'none';
+         window,location = "./vistas/modulo2.html"
+     }else {
+         //si no hay usuario logueado, mostrar los botones y ocultar el nombre
+         PopUp.style.display = 'flex';
+         Sect.style.filter = 'blur(15px)';
+     }
+ }
+
+ Mod2.addEventListener('click', AccesoModulo2);
+
+
+ function AccesoModulo3(){
+    /*  let currentUser = JSON.parse(localStorage.getItem('user')); */
+    let confirmarSesion = currentUser ? currentUser.userLogged : false
+
+ 
+     if (confirmarSesion){
+         //si hay un usuario logueado, mostrarsu nombre y ocultar botones
+         
+         PopUp.style.display = 'none';
+         Sect.style.filter = 'none';
+         window,location = "./vistas/modulo3.html"
+     }else {
+         //si no hay usuario logueado, mostrar los botones y ocultar el nombre
+         PopUp.style.display = 'flex';
+         Sect.style.filter = 'blur(15px)';
+     }
+ }
+
+ Mod3.addEventListener('click', AccesoModulo3);
+
+
+ function QuitarPopUp(){
+ 
+    PopUp.style.display = 'none';
+    Sect.style.filter = 'none'; 
+  
+ }
+
+ Equis.addEventListener('click', QuitarPopUp);
+
 
 

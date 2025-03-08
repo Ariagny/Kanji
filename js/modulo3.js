@@ -36,15 +36,15 @@ function verificarSesion(){
 
     }
 }
+document.addEventListener('DOMContentLoaded', verificarSesion);
 
 function cerrarSesion (){
-    window.location = " ../vistas/cerrar.html"
+    currentUser.userLogged = false
+    localStorage.setItem("user", JSON.stringify(currentUser))
+    window.location = "../index.html"
     }
     
-    btnCerrarSesion.addEventListener("click",cerrarSesion)
-
-
-document.addEventListener('DOMContentLoaded', verificarSesion);
+btnCerrarSesion.addEventListener("click",cerrarSesion)
 
 //Validar usuario
 

@@ -104,6 +104,72 @@
     margin-right: 5px;
 }
 
+
+/* pop-up */
+.sect{
+    filter: blur(0px);
+}
+
+
+.popup {
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    margin: auto;
+    display: none;
+}
+
+.popup-caja{
+    border-radius: 10px;
+    padding: 150px 0px 100px 0;
+    max-width: 900px;
+    min-width: 400px;
+    width: 40%;
+    border: 1px solid #888888;
+    box-shadow: 5px 10px 8px #888888;
+    background: linear-gradient(to right, #fc785af0, #d8363a, #AD3636, #7f1b33);;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    flex-direction: column;
+    display: flex;
+    margin: 149px auto;
+}
+
+.Pop-C1{
+display: flex;
+justify-content: end;
+margin: -120px 30px 50px 0;
+}
+
+.equis{
+    font-size: 30px;
+    color: white;
+}
+.Pop-C2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pop-btn{
+    margin-top: 25px;
+    border-radius: 15px;
+    padding: 10px 15px;
+    border: 2px solid white;
+    background-color: white;
+    color: rgb(133, 50, 50);
+    font-weight: 600;
+}
+
+.pop-text{
+    text-align: center;
+    margin: 0 10px 0 10px;
+}
+
+
+
+
 .certi{
     margin-left: 0%;
 }

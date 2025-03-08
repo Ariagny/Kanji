@@ -37,14 +37,16 @@ function verificarSesion(){
     }
 }
 
-function cerrarSesion (){
-    window.location = " ../vistas/cerrar.html"
-    }
-    
-    btnCerrarSesion.addEventListener("click",cerrarSesion)
-
 
 document.addEventListener('DOMContentLoaded', verificarSesion);
+
+function cerrarSesion (){
+    currentUser.userLogged = false
+    localStorage.setItem("user", JSON.stringify(currentUser))
+    window.location = "../index.html"
+    }
+    
+btnCerrarSesion.addEventListener("click",cerrarSesion)
 
 //Ingresar a los módulos solo si esta logueado
 
