@@ -147,7 +147,6 @@ function AccesoModulo1(){
     Sect2.style.filter = 'none';
     Sect3.style.filter = 'none';
     Sect4.style.filter = 'none';
-  
  }
 
  Equis.addEventListener('click', QuitarPopUp);
