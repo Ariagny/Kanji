@@ -104,6 +104,12 @@
     margin-right: 5px;
 }
 
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none!important;
+}
+
 
 /* pop-up */
 .sect1{

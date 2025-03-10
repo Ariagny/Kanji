@@ -104,6 +104,15 @@
     margin-right: 5px;
 }
 
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none!important;
+}
+
+
+
+
 
 .sect{
     filter: blur(15px);
