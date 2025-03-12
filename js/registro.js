@@ -15,7 +15,19 @@ function registrarUser(e){
         userLogged: false
     }
     //enviar información a local storage
-    localStorage.setItem("user", JSON.stringify(user));   
+
+    let usuarios = JSON.parse(localStorage.getItem("usuarios"))  || [];
+
+    for (let i = 0; i < usuarios.length; i++) {
+        if (usuarios[i].userC === Correo.value) {
+            alert("Este correo ya está registrado. Usa otro o inicia sesión.");
+            formulario.reset();
+            return;
+        }
+    }
+
+    usuarios.push(user)
+    localStorage.setItem("usuarios", JSON.stringify(usuarios));   
     formulario.reset()
     window.location = "../vistas/inicio-sesion.html"
 }

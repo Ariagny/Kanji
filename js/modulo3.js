@@ -10,7 +10,7 @@ const BarrraNav = document.querySelector("#navbarNav");
 const btnCerrarSesion = document.querySelector(".nav-link8");
 
 
-let currentUser = JSON.parse(localStorage.getItem('user'));
+let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
 //verifica si el usuario esta registrado
 function verificarSesion(){
@@ -39,9 +39,14 @@ function verificarSesion(){
 document.addEventListener('DOMContentLoaded', verificarSesion);
 
 function cerrarSesion (){
-    currentUser.userLogged = false
-    localStorage.setItem("user", JSON.stringify(currentUser))
-    window.location = "../index.html"
+
+    for (let i = 0; i < usuarios.length; i++) {
+    if(usuarios[i].logged){
+        usuarios[i].userLogged = false
+        localStorage.setItem("usuarios", JSON.stringify(usuarios))
+        window.location = "./index.html"
+    }
+    }
     }
     
 btnCerrarSesion.addEventListener("click",cerrarSesion)
