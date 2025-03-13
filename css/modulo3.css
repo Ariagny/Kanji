@@ -331,6 +331,12 @@ color: rgb(255, 255, 255);
     font-size: 20px;
 }
 
+.enlace-s{
+    text-decoration: none;
+    color: white;
+}
+
+
 @media(min-width:992px){
     
     .foot{

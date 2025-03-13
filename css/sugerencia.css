@@ -1,0 +1,174 @@
+/* barra menu */
+.cont{
+    background-color: #7f1b33;
+}
+.heade{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-logo{
+    width: 100px;
+    margin: 10px 0 0 15px;
+}
+#navbarNav{
+    justify-content: space-between;
+}
+
+#navbarNav a{
+    color: white;
+}
+
+.btn-nav{
+    color: white;
+}
+
+.nav-link1{
+    margin: auto 5px;
+    
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-link2{
+    margin: auto 5px;
+    
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-link3{
+    margin: auto 5px;
+    
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-link4{
+    margin: auto 5px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-link5{
+    margin: auto 5px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-link6{
+    margin: auto 5px;
+    color: white;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-list{
+    margin: auto 5px;
+    color: white;
+    font-size: large;
+    display: none;
+    text-decoration: none;
+}
+
+.nav-link7{
+    margin: auto 5px;
+    display: none;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-link8{
+    margin: auto 5px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-ini{
+    margin-right: 5px;
+}
+
+.nav-in{
+    display: flex;
+    margin-right: 5px;
+    font-size: 35px;
+}
+
+.nav-reg{
+    margin-right: 5px;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none!important;
+}
+
+
+/* Contenido */
+
+
+
+body {
+    color: white;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../sources/images/fondomodulos.png);
+    background-size: cover;
+}
+  
+
+.container1 {
+    margin: 130px auto;
+    max-width: 700px;
+    padding: 30px;
+    border: 2px solid white;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(225, 223, 223, 0.566);
+
+}
+
+.conte{
+    background-color: linear-gradient(to right, #fc785af0, #d8363a, #AD3636, #7f1b33);;
+}
+
+
+
+.btn-custom {
+  font-family: 'LEMONMILK';
+  background-color: #FF0A6C;
+  border: none;
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.btn-custom:hover {
+    background-color: #FF0A6C}
+
+
+
+
+
+
+@media(max-width:576px){
+
+}
+
+@media(min-width:992px){
+
+}
+
