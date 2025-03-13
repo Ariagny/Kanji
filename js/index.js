@@ -15,11 +15,12 @@ let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 //verifica si el usuario esta registrado
 function verificarSesion(){
    /*  let currentUser = JSON.parse(localStorage.getItem('user')); */
-    let confirmarSesion = currentUser ? currentUser.userLogged : false
+   for (let i = 0; i < usuarios.length; i++) {
+    let confirmarSesion = usuarios[i] ? usuarios[i].userLogged : false
 
     if (confirmarSesion){
         //si hay un usuario logueado, mostrarsu nombre y ocultar botones
-        SaludoUsuario.textContent =`Hola, ${currentUser.userN}`;
+        SaludoUsuario.textContent =`Hola, ${usuarios[i].userN}`;
         btnIniciarSesion.style.display = 'none';
         btnRegistroSesion.style.display = 'none';
         btnUsuario.style.display = 'flex';
@@ -35,6 +36,9 @@ function verificarSesion(){
         btnCerrarSesion.style.display = "none" 
 
     }
+    
+   }
+    
 }
 
 document.addEventListener('DOMContentLoaded', verificarSesion);
@@ -44,10 +48,10 @@ document.addEventListener('DOMContentLoaded', verificarSesion);
 function cerrarSesion (){
 
     for (let i = 0; i < usuarios.length; i++) {
-    if(usuarios[i].logged){
+    if(usuarios[i].userLogged){
         usuarios[i].userLogged = false
         localStorage.setItem("usuarios", JSON.stringify(usuarios))
-        window.location = "./index.html"
+        window.location = "../index.html"
     }
     }
     }
@@ -69,51 +73,58 @@ const Mod3 = document.querySelector(".mod3");
 
 function AccesoModulo1(){
     /*  let currentUser = JSON.parse(localStorage.getItem('user')); */
-    let confirmarSesion = currentUser ? currentUser.userLogged : false
+    for (let i = 0; i < usuarios.length; i++) {
+        let confirmarSesion = usuarios[i] ? usuarios[i].userLogged : false
 
  
-     if (confirmarSesion){
-         //si hay un usuario logueado, mostrarsu nombre y ocultar botones
-         
-         PopUp.style.display = 'none';
-         Sect1.style.filter = 'none';
-         Sect2.style.filter = 'none';
-         Sect3.style.filter = 'none';
-         Sect4.style.filter = 'none';
-         window,location = "./vistas/modulo1.html"
-     }else {
-         //si no hay usuario logueado, mostrar los botones y ocultar el nombre
-         PopUp.style.display = 'flex';
-         Sect1.style.filter = 'blur(5px)';
-         Sect2.style.filter = 'blur(5px)';
-         Sect3.style.filter = 'blur(5px)';
-         Sect4.style.filter = 'blur(5px)';
-     }
+        if (confirmarSesion){
+            //si hay un usuario logueado, mostrarsu nombre y ocultar botones
+            
+            PopUp.style.display = 'none';
+            Sect1.style.filter = 'none';
+            Sect2.style.filter = 'none';
+            Sect3.style.filter = 'none';
+            Sect4.style.filter = 'none';
+            window,location = "./vistas/modulo1.html"
+        }else {
+            //si no hay usuario logueado, mostrar los botones y ocultar el nombre
+            PopUp.style.display = 'flex';
+            Sect1.style.filter = 'blur(5px)';
+            Sect2.style.filter = 'blur(5px)';
+            Sect3.style.filter = 'blur(5px)';
+            Sect4.style.filter = 'blur(5px)';
+        }
+        
+    }
+
  }
 
  Mod1.addEventListener('click', AccesoModulo1);
 
  function AccesoModulo2(){
     /*  let currentUser = JSON.parse(localStorage.getItem('user')); */
-    let confirmarSesion = currentUser ? currentUser.userLogged : false
+    for (let i = 0; i < usuarios.length; i++) {
+        let confirmarSesion = usuarios[i] ? usuarios[i].userLogged : false
 
- 
-    if (confirmarSesion){
-        //si hay un usuario logueado, mostrarsu nombre y ocultar botones
+        if (confirmarSesion){
+            //si hay un usuario logueado, mostrarsu nombre y ocultar botones
+            
+            PopUp.style.display = 'none';
+            Sect1.style.filter = 'none';
+            Sect2.style.filter = 'none';
+            Sect3.style.filter = 'none';
+            Sect4.style.filter = 'none';
+            window,location = "./vistas/modulo2.html"
+        }else {
+            //si no hay usuario logueado, mostrar los botones y ocultar el nombre
+            PopUp.style.display = 'flex';
+            Sect1.style.filter = 'blur(5px)';
+            Sect2.style.filter = 'blur(5px)';
+            Sect3.style.filter = 'blur(5px)';
+            Sect4.style.filter = 'blur(5px)';
+        }
         
-        PopUp.style.display = 'none';
-        Sect1.style.filter = 'none';
-        Sect2.style.filter = 'none';
-        Sect3.style.filter = 'none';
-        Sect4.style.filter = 'none';
-        window,location = "./vistas/modulo2.html"
-    }else {
-        //si no hay usuario logueado, mostrar los botones y ocultar el nombre
-        PopUp.style.display = 'flex';
-        Sect1.style.filter = 'blur(5px)';
-        Sect2.style.filter = 'blur(5px)';
-        Sect3.style.filter = 'blur(5px)';
-        Sect4.style.filter = 'blur(5px)';
+        
     }
  }
 
@@ -122,25 +133,28 @@ function AccesoModulo1(){
 
  function AccesoModulo3(){
     /*  let currentUser = JSON.parse(localStorage.getItem('user')); */
-    let confirmarSesion = currentUser ? currentUser.userLogged : false
-
- 
-    if (confirmarSesion){
-        //si hay un usuario logueado, mostrarsu nombre y ocultar botones
+    for (let i = 0; i < usuarios.length; i++) {
+        let confirmarSesion = usuarios[i] ? usuarios[i].userLogged : false
+    
+     
+        if (confirmarSesion){
+            //si hay un usuario logueado, mostrarsu nombre y ocultar botones
+            PopUp.style.display = 'none';
+            Sect1.style.filter = 'none';
+            Sect2.style.filter = 'none';
+            Sect3.style.filter = 'none';
+            Sect4.style.filter = 'none';
+            window,location = "./vistas/modulo3.html"
+        }else {
+            //si no hay usuario logueado, mostrar los botones y ocultar el nombre
+            PopUp.style.display = 'flex';
+            Sect1.style.filter = 'blur(5px)';
+            Sect2.style.filter = 'blur(5px)';
+            Sect3.style.filter = 'blur(5px)';
+            Sect4.style.filter = 'blur(5px)';
+        }
         
-        PopUp.style.display = 'none';
-        Sect1.style.filter = 'none';
-        Sect2.style.filter = 'none';
-        Sect3.style.filter = 'none';
-        Sect4.style.filter = 'none';
-        window,location = "./vistas/modulo3.html"
-    }else {
-        //si no hay usuario logueado, mostrar los botones y ocultar el nombre
-        PopUp.style.display = 'flex';
-        Sect1.style.filter = 'blur(5px)';
-        Sect2.style.filter = 'blur(5px)';
-        Sect3.style.filter = 'blur(5px)';
-        Sect4.style.filter = 'blur(5px)';
+        
     }
  }
 
@@ -148,12 +162,15 @@ function AccesoModulo1(){
 
 
  function QuitarPopUp(){
- 
-    PopUp.style.display = 'none';
-    Sect1.style.filter = 'none'; 
-    Sect2.style.filter = 'none';
-    Sect3.style.filter = 'none';
-    Sect4.style.filter = 'none';
+    for (let i = 0; i < usuarios.length; i++) {
+           PopUp.style.display = 'none';
+           Sect1.style.filter = 'none'; 
+           Sect2.style.filter = 'none';
+           Sect3.style.filter = 'none';
+           Sect4.style.filter = 'none';
+        
+        
+    }
  }
 
  Equis.addEventListener('click', QuitarPopUp);

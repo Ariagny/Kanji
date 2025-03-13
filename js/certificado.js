@@ -47,10 +47,10 @@ document.addEventListener('DOMContentLoaded', verificarSesion);
 function cerrarSesion (){
 
     for (let i = 0; i < usuarios.length; i++) {
-    if(usuarios[i].logged){
+    if(usuarios[i].userLogged){
         usuarios[i].userLogged = false
         localStorage.setItem("usuarios", JSON.stringify(usuarios))
-        window.location = "./index.html"
+        window.location = "../index.html"
     }
     }
     }
