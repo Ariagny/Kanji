@@ -1,6 +1,9 @@
 /* barra menu */
-.heade{
+.cont{
     background-color: #7f1b33;
+}
+.heade{
+    margin: auto;
     display: flex;
     justify-content: space-between;
 }
@@ -70,13 +73,19 @@
     color: white;
     font-size: large;
     display: none;
-    align-items: center;
     text-decoration: none;
 }
 
 .nav-link7{
     margin: auto 5px;
     display: none;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-link8{
+    margin: auto 5px;
+    display: flex;
     align-items: center;
     text-decoration: none;
 }
@@ -93,6 +102,12 @@
 
 .nav-reg{
     margin-right: 5px;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none!important;
 }
 
 
@@ -193,15 +208,28 @@ iframe{
 
 .icon-mod{
     color: #AD3636;
+    font-size: 18px;
 }
 
 .enlace{
     color: black;
     text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
 }
 
 .mod-4{
     margin-left: 0px;
+}
+
+
+.sig {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 @media(max-width:576px){
@@ -228,13 +256,21 @@ iframe{
 }
 
 .modulo1{
+
     display: flex;
     flex-direction: row;
+    max-width: 1500px;
+    align-items: center;
+    margin: 50px auto;
+    
 }
 
 .modulo2{
     display: flex;
     flex-direction: row-reverse;
+    max-width: 1500px;
+    align-items: center;
+    margin: 50px auto;
 }
 
 .img-1{
@@ -261,27 +297,32 @@ iframe{
 
 .des-plan2{
     display: flex;
+    align-items: end;
     margin: 0;
     text-align: end;
 }
 
 .des-1{
-    width: 80%;
+    width: 60%;
+    max-width: 700px;
     margin: 5px  0px 15px 0px  ;
 }
 
 .des-2{
-    width: 80%;
+    width: 60%;
+    max-width: 700px;
     margin: 5px  0px 15px 145px  ;
 }
 
 .des-3{
-    width: 80%;
+    width: 60%;
+    max-width: 700px;
     margin: 5px  0px 15px 0px  ;
 }
 
 .des-4{
-    width: 80%;
+    width: 60%;
+    max-width: 700px;
     margin: 5px  0px 15px 145px  ;
 }
 
@@ -376,4 +417,5 @@ color: rgb(255, 255, 255);
         flex-direction: row;
     }  
 }
+
 

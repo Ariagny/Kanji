@@ -18,7 +18,7 @@
 <body>
     <section class="h-100 gradient-form" >
         <div class="container py-5 h-100">
-            <a href="./inicio-sesion.html">
+            <a href="../index.html">
                 <i class="fa-solid fa-arrow-left flecha"></i>
             </a>
           <div class="row d-flex justify-content-center align-items-center h-100">
@@ -39,26 +39,31 @@
       
                         <div data-mdb-input-init class="form-outline mb-4">
                             <label class="form-label" for="form2Example11">Nombres</label>
-                          <input value="" type="username" id="form2Example11" class="form-control Username" />
+                          <input value="" type="username" id="form2Example11" class="form-control Username" required />
                         </div>
 
                         <div data-mdb-input-init class="form-outline mb-4">
                             <label class="form-label" for="form2Example12">Apellidos</label>
-                          <input value="" type="apellido" id="form2Example12" class="form-control Apellidos"/>
+                          <input value="" type="apellido" id="form2Example12" class="form-control Apellidos" required/>
                         </div>
 
                         <div data-mdb-input-init class="form-outline mb-4">
                             <label class="form-label" for="form2Example13">Correo electrónico</label>
-                          <input value="" type="email" id="form2Example13" class="form-control Correo"/>
+                          <input value="" type="email" id="form2Example13" class="form-control Correo" required/>
                         </div>
       
                         <div data-mdb-input-init class="form-outline mb-4">
                             <label class="form-label" for="form2Example22">Contraseña</label>
-                          <input value="" type="password" id="form2Example22" class="form-control Password"  />
+                          <input value="" type="password" id="form2Example22" class="form-control Password" required />
                         </div>
       
                         <div class="text-center pt-1 mt-5 pb-1 inic">
                           <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit">Registrarse</button>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-center pb-4 inic">
+                          <p class="mb-0 me-2">¿Ya tienes una cuenta?</p>
+                          <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn-inic"> <a href="./inicio-sesion.html" class="enlace-inic">Inicia sesión</a></button>
                         </div>
       
                       </form>

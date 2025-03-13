@@ -1,6 +1,9 @@
 /* barra menu */
-.heade{
+.cont{
     background-color: #7f1b33;
+}
+.heade{
+    margin: auto;
     display: flex;
     justify-content: space-between;
 }
@@ -70,13 +73,19 @@
     color: white;
     font-size: large;
     display: none;
-    align-items: center;
     text-decoration: none;
 }
 
 .nav-link7{
     margin: auto 5px;
     display: none;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-link8{
+    margin: auto 5px;
+    display: flex;
     align-items: center;
     text-decoration: none;
 }
@@ -95,6 +104,12 @@
     margin-right: 5px;
 }
 
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none!important;
+}
+
 
 
 
@@ -109,6 +124,12 @@
 .tit{
     display: flex;
     text-align: left;
+}
+
+.enlace{
+    color: black;
+    text-decoration: none;
+    
 }
   
   .avatar-container img {
@@ -137,9 +158,10 @@
     color: white;
     padding: 5px 5px;
   }
-
-  .progreso{
-    background: -webkit-linear-gradient(to right, #fc785af0, #d8363a,#AD3636, #7f1b33);
-  }
   
+  .progress-bar {
+
+    background-color: #9b3535!important;
+
+}
  

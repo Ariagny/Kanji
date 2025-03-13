@@ -3,17 +3,24 @@ const Username = document.querySelector(".Username");
 const Password = document.querySelector(".Password");
 const formulario = document.querySelector(".formulario");
 
+let usuarios = JSON.parse(localStorage.getItem("usuarios"))  || [];
+
 //verificar usuario
 function validarUsuario (e){
     e.preventDefault();
     //llamar la información de local storage
-    let currentUser = JSON.parse(localStorage.getItem("user"));
-
-if (Username.value === currentUser.userN && Password.value === currentUser.userP){
-    window.location = "../index.html"
-}else {
-  alert("El usuario o la contraseña es incorrecta");
-}
+    for (let i = 0; i < usuarios.length; i++) {
+      if (Username.value === usuarios[i].userN && Password.value === usuarios[i].userP){
+    
+        window.location = "../index.html"
+        usuarios[i].userLogged = true
+        localStorage.setItem("usuarios", JSON.stringify(usuarios))
+        return
+    }else {
+      alert("El usuario o la contraseña es incorrecta");
+    }
+      
+    }
 
 formulario.reset()
 }

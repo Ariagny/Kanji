@@ -7,47 +7,75 @@ const SaludoUsuario = document.querySelector(".nav-link6");
 const btnUsuario = document.querySelector(".nav-link7");
 const btnlist = document.querySelector(".nav-list");
 const BarrraNav = document.querySelector("#navbarNav");
+const btnCerrarSesion = document.querySelector(".nav-link8");
 
 
-let currentUser = JSON.parse(localStorage.getItem('user'));
+let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
 //verifica si el usuario esta registrado
 function verificarSesion(){
+
+    for (let i = 0; i < usuarios.length; i++) {
+        let confirmarSesion =  usuarios[i] ? usuarios[i].userLogged : false
+
+        if (confirmarSesion){
+            //si hay un usuario logueado, mostrarsu nombre y ocultar botones
+            
+            btnIniciarSesion.style.display = 'none';
+            btnRegistroSesion.style.display = 'none';
+            btnCerrarSesion.style.display = "flex"  
+           return
+        }else {
+            //si no hay usuario logueado, mostrar los botones y ocultar el nombre
+            
+            btnIniciarSesion.style.display = 'flex';
+            btnRegistroSesion.style.display = 'flex';
+            btnlist.classList.add('d-none');
+            btnlist.classList.remove('d-flex');
+            BarrraNav.style.justifyContent = "right"
+            btnCerrarSesion.style.display = "none"
+    
+        }
+        
+    }
    /*  let currentUser = JSON.parse(localStorage.getItem('user')); */
 
-    if (currentUser){
-        //si hay un usuario logueado, mostrarsu nombre y ocultar botones
-        
-        btnIniciarSesion.style.display = 'none';
-        btnRegistroSesion.style.display = 'none';
-       
-    }else {
-        //si no hay usuario logueado, mostrar los botones y ocultar el nombre
-        
-        btnIniciarSesion.style.display = 'flex';
-        btnRegistroSesion.style.display = 'flex';
-        btnlist.classList.add('d-none');
-        btnlist.classList.remove('d-flex');
-        BarrraNav.style.justifyContent = "right"
-
-    }
 }
-
 
 document.addEventListener('DOMContentLoaded', verificarSesion);
 
+function cerrarSesion (){
+
+    for (let i = 0; i < usuarios.length; i++) {
+    if(usuarios[i].userLogged){
+        usuarios[i].userLogged = false
+        localStorage.setItem("usuarios", JSON.stringify(usuarios))
+        window.location = "../index.html"
+    }
+    }
+    }
+    
+btnCerrarSesion.addEventListener("click",cerrarSesion)
+
 const NombreU = document.querySelector(".NombreU");
 
-//verifica si el usuario esta registrado
+//Nombre del usuario
 function NombreUsuario(){
-    if (currentUser){
-        //si hay un usuario logueado, mostrarsu nombre y ocultar botones
-        NombreU.textContent =`${currentUser.userN}`;
-    }else {
-        //si no hay usuario logueado, mostrar los botones y ocultar el nombre
-        NombreU.textContent = '';
+    for (let i = 0; i < usuarios.length; i++) {
+        let confirmarSesion =  usuarios[i] ? usuarios[i].userLogged : false
 
+        if (confirmarSesion){
+            //si hay un usuario logueado, mostrarsu nombre y ocultar botones
+            NombreU.textContent =`${usuarios[i].userN}`;
+        }else {
+            //si no hay usuario logueado, mostrar los botones y ocultar el nombre
+            NombreU.textContent = '';
+    
+        }
+        
     }
+
+
 }
 
 document.addEventListener('DOMContentLoaded', NombreUsuario);
