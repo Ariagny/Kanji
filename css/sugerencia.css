@@ -121,13 +121,13 @@ body {
     justify-content: center;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(../sources/images/fondomodulos.png);
     background-size: cover;
 }
   
 
 .container1 {
     margin: 130px auto;
+    width: 90%;
     max-width: 700px;
     padding: 30px;
     border: 2px solid white;
@@ -135,33 +135,39 @@ body {
     backdrop-filter: blur(15px);
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(225, 223, 223, 0.566);
+    background: linear-gradient(to right, #fc785af0, #d8363a, #AD3636, #7f1b33);
 
 }
 
 .conte{
-    background-color: linear-gradient(to right, #fc785af0, #d8363a, #AD3636, #7f1b33);;
+    background-color: linear-gradient(to right, #fc785af0, #d8363a, #AD3636, #7f1b33);
 }
 
+.titulo{
+    color: white;
+}
+
+.desc{
+    color: white;
+}
 
 
 .btn-custom {
-  font-family: 'LEMONMILK';
-  background-color: #FF0A6C;
+  background-color: #ffffff;
   border: none;
-  color: #fff;
-  padding: 10px 10px;
-  border-radius: 5px;
+  color: #7f1b33;
+  padding: 10px 50px;
+  border-radius: 15px;
   cursor: pointer;
   font-size: 16px;
   margin-top: 20px;
-}
+  }
 
 .btn-custom:hover {
-    background-color: #FF0A6C}
-
-
-
-
+   
+    background-color: #7f1b33;
+    color: white;
+}
 
 
 @media(max-width:576px){

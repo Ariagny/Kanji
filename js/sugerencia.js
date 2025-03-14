@@ -25,19 +25,16 @@ function verificarSesion(){
         btnRegistroSesion.style.display = 'none';
         btnUsuario.style.display = 'flex';
         btnCerrarSesion.style.display = "flex"  
-    }else {
-        //si no hay usuario logueado, mostrar los botones y ocultar el nombre
-        SaludoUsuario.textContent = '';
-        btnIniciarSesion.style.display = 'flex';
-        btnRegistroSesion.style.display = 'flex';
-        btnlist.classList.add('d-none');
-        btnlist.classList.remove('d-flex');
-        BarrraNav.style.justifyContent = "right"
-        btnCerrarSesion.style.display = "none" 
-
+        return
     }
-    
-   }
+}
+SaludoUsuario.textContent = '';
+btnIniciarSesion.style.display = 'flex';
+btnRegistroSesion.style.display = 'flex';
+btnlist.classList.add('d-none');
+btnlist.classList.remove('d-flex');
+BarrraNav.style.justifyContent = "right"
+btnCerrarSesion.style.display = "none" 
 
 }
 
