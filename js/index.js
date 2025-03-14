@@ -1,3 +1,12 @@
+/* 1. Si el video esta terminado y el pdf descargado se activa el examen
+   2. Si el examen se aprueba el módulo siguiente se desloque
+   3. El progreso se refleja en el dashboard 
+
+
+*/
+
+
+
 /* const btnModulo1 = document.querySelector(".nav-link1");
 const btnModulo2 = document.querySelector(".nav-link2");
 const btnModulo3 = document.querySelector(".nav-link3"); */
