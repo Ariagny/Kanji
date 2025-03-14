@@ -34,19 +34,16 @@ function verificarSesion(){
         btnRegistroSesion.style.display = 'none';
         btnUsuario.style.display = 'flex';
         btnCerrarSesion.style.display = "flex" 
-    }else {
-        //si no hay usuario logueado, mostrar los botones y ocultar el nombre
-        SaludoUsuario.textContent = '';
-        btnIniciarSesion.style.display = 'flex';
-        btnRegistroSesion.style.display = 'flex';
-        btnlist.classList.add('d-none');
-        btnlist.classList.remove('d-flex');
-        BarrraNav.style.justifyContent = "right"
-        btnCerrarSesion.style.display = "none" 
-
-    }
-    
-   }
+        return
+    }    
+   }        
+   SaludoUsuario.textContent = '';
+   btnIniciarSesion.style.display = 'flex';
+   btnRegistroSesion.style.display = 'flex';
+   btnlist.classList.add('d-none');
+   btnlist.classList.remove('d-flex');
+   BarrraNav.style.justifyContent = "right"
+   btnCerrarSesion.style.display = "none" 
     
 }
 
@@ -88,23 +85,20 @@ function AccesoModulo1(){
  
         if (confirmarSesion){
             //si hay un usuario logueado, mostrarsu nombre y ocultar botones
-            
             PopUp.style.display = 'none';
             Sect1.style.filter = 'none';
             Sect2.style.filter = 'none';
             Sect3.style.filter = 'none';
             Sect4.style.filter = 'none';
             window,location = "./vistas/modulo1.html"
-        }else {
-            //si no hay usuario logueado, mostrar los botones y ocultar el nombre
-            PopUp.style.display = 'flex';
-            Sect1.style.filter = 'blur(5px)';
-            Sect2.style.filter = 'blur(5px)';
-            Sect3.style.filter = 'blur(5px)';
-            Sect4.style.filter = 'blur(5px)';
-        }
-        
+            return
+        }        
     }
+    PopUp.style.display = 'flex';
+    Sect1.style.filter = 'blur(5px)';
+    Sect2.style.filter = 'blur(5px)';
+    Sect3.style.filter = 'blur(5px)';
+    Sect4.style.filter = 'blur(5px)';
 
  }
 
@@ -124,17 +118,15 @@ function AccesoModulo1(){
             Sect3.style.filter = 'none';
             Sect4.style.filter = 'none';
             window,location = "./vistas/modulo2.html"
-        }else {
-            //si no hay usuario logueado, mostrar los botones y ocultar el nombre
-            PopUp.style.display = 'flex';
-            Sect1.style.filter = 'blur(5px)';
-            Sect2.style.filter = 'blur(5px)';
-            Sect3.style.filter = 'blur(5px)';
-            Sect4.style.filter = 'blur(5px)';
-        }
-        
+            return
+        }     
         
     }
+    PopUp.style.display = 'flex';
+    Sect1.style.filter = 'blur(5px)';
+    Sect2.style.filter = 'blur(5px)';
+    Sect3.style.filter = 'blur(5px)';
+    Sect4.style.filter = 'blur(5px)';
  }
 
  Mod2.addEventListener('click', AccesoModulo2);
@@ -154,32 +146,27 @@ function AccesoModulo1(){
             Sect3.style.filter = 'none';
             Sect4.style.filter = 'none';
             window,location = "./vistas/modulo3.html"
-        }else {
-            //si no hay usuario logueado, mostrar los botones y ocultar el nombre
-            PopUp.style.display = 'flex';
-            Sect1.style.filter = 'blur(5px)';
-            Sect2.style.filter = 'blur(5px)';
-            Sect3.style.filter = 'blur(5px)';
-            Sect4.style.filter = 'blur(5px)';
-        }
-        
-        
+            return
+        }        
     }
+    PopUp.style.display = 'flex';
+    Sect1.style.filter = 'blur(5px)';
+    Sect2.style.filter = 'blur(5px)';
+    Sect3.style.filter = 'blur(5px)';
+    Sect4.style.filter = 'blur(5px)';
  }
 
  Mod3.addEventListener('click', AccesoModulo3);
 
 
  function QuitarPopUp(){
-    for (let i = 0; i < usuarios.length; i++) {
+   
            PopUp.style.display = 'none';
            Sect1.style.filter = 'none'; 
            Sect2.style.filter = 'none';
            Sect3.style.filter = 'none';
            Sect4.style.filter = 'none';
-        
-        
-    }
+           return
  }
 
  Equis.addEventListener('click', QuitarPopUp);

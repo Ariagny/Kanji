@@ -25,20 +25,15 @@ function verificarSesion(){
             btnRegistroSesion.style.display = 'none';
             btnCerrarSesion.style.display = "flex"  
            return
-        }else {
-            //si no hay usuario logueado, mostrar los botones y ocultar el nombre
-            
-            btnIniciarSesion.style.display = 'flex';
-            btnRegistroSesion.style.display = 'flex';
-            btnlist.classList.add('d-none');
-            btnlist.classList.remove('d-flex');
-            BarrraNav.style.justifyContent = "right"
-            btnCerrarSesion.style.display = "none"
-    
         }
-        
-    }
-   /*  let currentUser = JSON.parse(localStorage.getItem('user')); */
+        }
+    btnIniciarSesion.style.display = 'flex';
+    btnRegistroSesion.style.display = 'flex';
+    btnlist.classList.add('d-none');
+    btnlist.classList.remove('d-flex');
+    BarrraNav.style.justifyContent = "right"
+    btnCerrarSesion.style.display = "none"
+
 
 }
 
@@ -67,13 +62,11 @@ function NombreUsuario(){
         if (confirmarSesion){
             //si hay un usuario logueado, mostrarsu nombre y ocultar botones
             NombreU.textContent =`${usuarios[i].userN}`;
-        }else {
-            //si no hay usuario logueado, mostrar los botones y ocultar el nombre
-            NombreU.textContent = '';
-    
+            return
         }
         
     }
+    NombreU.textContent = '';
 
 
 }

@@ -53,34 +53,27 @@ function cerrarSesion (){
     
 btnCerrarSesion.addEventListener("click",cerrarSesion)
 
-//Validar usuario
 
-const PopUp = document.querySelector(".popup");
-const Sect = document.querySelector(".sect");
-const BtnDescargar = document.querySelector(".enlace-pdf");
-const BtnExa = document.querySelector(".flech");
+//contenido
+const Nombre = document.querySelector(".Nombre");
+const Correo = document.querySelector(".Correo");
+const Mensaje = document.querySelector(".Mensaje");
+const Formulario = document.querySelector(".Formulario");
 
-function AccesoModulos(){
-    /*  let currentUser = JSON.parse(localStorage.getItem('user')); */
-    for (let i = 0; i < usuarios.length; i++) {
-        let confirmarSesion = usuarios[i] ? usuarios[i].userLogged : false
-    
-     
-         if (confirmarSesion){
-             //si hay un usuario logueado, mostrarsu nombre y ocultar botones
-             
-             PopUp.style.display = 'none';
-             Sect.style.filter = 'none';
-             BtnDescargar.style.cursor = 'Pointer';
-             BtnExa.style.cursor = 'Pointer';  
-             return
-         }
-        }
-        PopUp.style.display = 'flex';
-        Sect.style.filter = 'blur(15px)';
-        BtnDescargar.style.cursor = 'not-allowed';
-        BtnExa.style.cursor = 'not-allowed';  
 
- }
+function registrarSugerencia(e){
+    e.preventDefault();
+    let Sugerencia = {
+        userN: Nombre.value,
+        userC: Correo.value,
+        userM: Mensaje.value,
+    }
+    //enviar información a local storage
 
- document.addEventListener('DOMContentLoaded', AccesoModulos);
+ 
+    localStorage.setItem("Sugerencia", JSON.stringify(Sugerencia));   
+    Formulario.reset()
+    window.location = "../index.html"
+}
+
+Formulario.addEventListener("submit",registrarSugerencia)

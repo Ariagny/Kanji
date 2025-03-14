@@ -25,20 +25,16 @@ function verificarSesion(){
             btnRegistroSesion.style.display = 'none';
             btnUsuario.style.display = 'flex';
             btnCerrarSesion.style.display = "flex"  
-        }else {
-            //si no hay usuario logueado, mostrar los botones y ocultar el nombre
-            SaludoUsuario.textContent = '';
-            btnIniciarSesion.style.display = 'flex';
-            btnRegistroSesion.style.display = 'flex';
-            btnlist.classList.add('d-none');
-            btnlist.classList.remove('d-flex');
-            BarrraNav.style.justifyContent = "right"
-            btnCerrarSesion.style.display = "none" 
-    
+            return
         }
-    
-    
-   }
+    }
+    SaludoUsuario.textContent = '';
+    btnIniciarSesion.style.display = 'flex';
+    btnRegistroSesion.style.display = 'flex';
+    btnlist.classList.add('d-none');
+    btnlist.classList.remove('d-flex');
+    BarrraNav.style.justifyContent = "right"
+    btnCerrarSesion.style.display = "none" 
 }
 document.addEventListener('DOMContentLoaded', verificarSesion);
 
@@ -75,17 +71,13 @@ function AccesoModulos(){
              Sect.style.filter = 'none';
              BtnDescargar.style.cursor = 'Pointer';
              BtnExa.style.cursor = 'Pointer';  
-         }else {
-             //si no hay usuario logueado, mostrar los botones y ocultar el nombre
-             PopUp.style.display = 'flex';
-             Sect.style.filter = 'blur(15px)';
-             BtnDescargar.style.cursor = 'not-allowed';
-             BtnExa.style.cursor = 'not-allowed';  
-     
+             return
          }
-        
-        
-    }
+        }
+        PopUp.style.display = 'flex';
+        Sect.style.filter = 'blur(15px)';
+        BtnDescargar.style.cursor = 'not-allowed';
+        BtnExa.style.cursor = 'not-allowed';  
  }
 
  document.addEventListener('DOMContentLoaded', AccesoModulos);

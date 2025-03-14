@@ -24,19 +24,16 @@ function verificarSesion(){
          btnRegistroSesion.style.display = 'none';
          btnUsuario.style.display = 'flex';
          btnCerrarSesion.style.display = "flex" 
-     }else {
-         //si no hay usuario logueado, mostrar los botones y ocultar el nombre
-         SaludoUsuario.textContent = '';
-         btnIniciarSesion.style.display = 'flex';
-         btnRegistroSesion.style.display = 'flex';
-         btnlist.classList.add('d-none');
-         btnlist.classList.remove('d-flex');
-         BarrraNav.style.justifyContent = "right"
-         btnCerrarSesion.style.display = "none" 
- 
-     }
-     
+         return
+     }        
     }
+    SaludoUsuario.textContent = '';
+    btnIniciarSesion.style.display = 'flex';
+    btnRegistroSesion.style.display = 'flex';
+    btnlist.classList.add('d-none');
+    btnlist.classList.remove('d-flex');
+    BarrraNav.style.justifyContent = "right"
+    btnCerrarSesion.style.display = "none" 
      
  }
  
@@ -72,13 +69,11 @@ function IngresarExamen1(){
          if (confirmarSesion){
              //si hay un usuario logueado, ir al modulo 1
              window.location = "../vistas/examen1.html"
+             return
     
-         }else {
-             //si no hay usuario logueado, mostrar los botones y ocultar el nombre
-             window.location = "../vistas/inicio-sesion.html"
          }
-                
-    }
+        }
+        window.location = "../vistas/inicio-sesion.html"
 }
 EXA1.addEventListener("click", IngresarExamen1);
 
@@ -93,13 +88,10 @@ function IngresarExamen2(){
          if (confirmarSesion){
              //si hay un usuario logueado, ir al modulo 1
              window.location = "../vistas/examen2.html"
-    
-         }else {
-             //si no hay usuario logueado, mostrar los botones y ocultar el nombre
-             window.location = "../vistas/inicio-sesion.html"
+             return
          }
-        
-    }
+        }
+        window.location = "../vistas/inicio-sesion.html"
 }
 EXA2.addEventListener("click", IngresarExamen2);
 
@@ -111,14 +103,11 @@ function IngresarExamen3(){
          if (confirmarSesion){
              //si hay un usuario logueado, ir al modulo 1
              window.location = "../vistas/examen3.html"
+             return
     
-         }else {
-             //si no hay usuario logueado, mostrar los botones y ocultar el nombre
-             window.location = "../vistas/inicio-sesion.html"
-         }
-        
-        
-    }
+         } 
+        }
+        window.location = "../vistas/inicio-sesion.html"
 }
 EXA3.addEventListener("click", IngresarExamen3);
 
@@ -131,12 +120,10 @@ function IngresarExamenF(){
          if (confirmarSesion){
              //si hay un usuario logueado, ir al modulo 1
              window.location = "../vistas/examen-final.html"
+             return
     
-         }else {
-             //si no hay usuario logueado, mostrar los botones y ocultar el nombre
-             window.location = "../vistas/inicio-sesion.html"
          }
-        
-    }
+        }
+        window.location = "../vistas/inicio-sesion.html"
 }
 EXAF.addEventListener("click", IngresarExamenF);

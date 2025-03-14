@@ -16,12 +16,9 @@ function validarUsuario (e){
         usuarios[i].userLogged = true
         localStorage.setItem("usuarios", JSON.stringify(usuarios))
         return
-    }else {
-      alert("El usuario o la contraseña es incorrecta");
     }
-      
-    }
-
+  }
+alert("El usuario o la contraseña es incorrecta");
 formulario.reset()
 }
 
