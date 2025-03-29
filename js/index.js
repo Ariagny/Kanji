@@ -57,7 +57,7 @@ function cerrarSesion (){
     if(usuarios[i].userLogged){
         usuarios[i].userLogged = false
         localStorage.setItem("usuarios", JSON.stringify(usuarios))
-        window.location = "../index.html"
+        window.location = "./index.html"
     }
     }
     }
@@ -170,6 +170,5 @@ function AccesoModulo1(){
  }
 
  Equis.addEventListener('click', QuitarPopUp);
-
 
 

@@ -9,109 +9,94 @@ const btnlist = document.querySelector(".nav-list");
 const BarrraNav = document.querySelector("#navbarNav");
 const btnCerrarSesion = document.querySelector(".nav-link8");
 
-
 let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
 //verifica si el usuario esta registrado
-function verificarSesion(){
+function verificarSesion() {
+  for (let i = 0; i < usuarios.length; i++) {
+    let confirmarSesion = usuarios[i] ? usuarios[i].userLogged : false;
 
-    for (let i = 0; i < usuarios.length; i++) {
-        let confirmarSesion =  usuarios[i] ? usuarios[i].userLogged : false
+    if (confirmarSesion) {
+      //si hay un usuario logueado, mostrarsu nombre y ocultar botones
 
-        if (confirmarSesion){
-            //si hay un usuario logueado, mostrarsu nombre y ocultar botones
-            
-            btnIniciarSesion.style.display = 'none';
-            btnRegistroSesion.style.display = 'none';
-            btnCerrarSesion.style.display = "flex"  
-           return
-        }
-        }
-    btnIniciarSesion.style.display = 'flex';
-    btnRegistroSesion.style.display = 'flex';
-    btnlist.classList.add('d-none');
-    btnlist.classList.remove('d-flex');
-    BarrraNav.style.justifyContent = "right"
-    btnCerrarSesion.style.display = "none"
-
-
+      btnIniciarSesion.style.display = "none";
+      btnRegistroSesion.style.display = "none";
+      btnCerrarSesion.style.display = "flex";
+      return;
+    }
+  }
+  btnIniciarSesion.style.display = "flex";
+  btnRegistroSesion.style.display = "flex";
+  btnlist.classList.add("d-none");
+  btnlist.classList.remove("d-flex");
+  BarrraNav.style.justifyContent = "right";
+  btnCerrarSesion.style.display = "none";
 }
 
-document.addEventListener('DOMContentLoaded', verificarSesion);
+document.addEventListener("DOMContentLoaded", verificarSesion);
 
-function cerrarSesion (){
+function cerrarSesion() {
+  for (let i = 0; i < usuarios.length; i++) {
+    if (usuarios[i].userLogged) {
+      usuarios[i].userLogged = false;
+      localStorage.setItem("usuarios", JSON.stringify(usuarios));
+      window.location = "../index.html";
+    }
+  }
+}
 
-    for (let i = 0; i < usuarios.length; i++) {
-    if(usuarios[i].userLogged){
-        usuarios[i].userLogged = false
-        localStorage.setItem("usuarios", JSON.stringify(usuarios))
-        window.location = "../index.html"
-    }
-    }
-    }
-    
-btnCerrarSesion.addEventListener("click",cerrarSesion)
+btnCerrarSesion.addEventListener("click", cerrarSesion);
 
 const NombreU = document.querySelector(".NombreU");
 
 //Nombre del usuario
-function NombreUsuario(){
-    for (let i = 0; i < usuarios.length; i++) {
-        let confirmarSesion =  usuarios[i] ? usuarios[i].userLogged : false
+function NombreUsuario() {
+  for (let i = 0; i < usuarios.length; i++) {
+    let confirmarSesion = usuarios[i] ? usuarios[i].userLogged : false;
 
-        if (confirmarSesion){
-            //si hay un usuario logueado, mostrarsu nombre y ocultar botones
-            NombreU.textContent =`${usuarios[i].userN}`;
-            return
-        }
-        
+    if (confirmarSesion) {
+      //si hay un usuario logueado, mostrarsu nombre y ocultar botones
+      NombreU.textContent = `${usuarios[i].userN}`;
+      return;
     }
-    NombreU.textContent = '';
+  }
+  NombreU.textContent = "";
+}
 
+document.addEventListener("DOMContentLoaded", NombreUsuario);
+
+//Porcentaje
+const BarraG = document.querySelector(".progresoG");
+const Barra1 = document.querySelector(".progreso1");
+const Barra2 = document.querySelector(".progreso2");
+const Barra3 = document.querySelector(".progreso3");
+
+function Barrras() {
+  for (let i = 0; i < usuarios.length; i++) {
+    if(usuarios[i].userLogged){
+    BarraG.style.width = `${usuarios[i].progreso}%`;
+    BarraG.textContent = `${usuarios[i].progreso}%`;
+    }
+    
+  }
+}
+
+document.addEventListener("DOMContentLoaded", Barrras);
+
+//descargar certificado
+
+const BtnDescargar = document.querySelector(".btn-des");
+
+function activarDescarga() {
+  for (let i = 0; i < usuarios.length; i++) {
+    if (usuarios[i].userLogged && usuarios[i].progreso === 100) {
+      /* BtnDescargar.style.cursor = 'pointer!important'; */
+      BtnDescargar.style.background = "#7f1b33";
+      BtnDescargar.disabled = false;
+      return
+    }
+  }
 
 }
 
-document.addEventListener('DOMContentLoaded', NombreUsuario);
-
-
-
-
-
-
-// Función para actualizar las barras de progreso con sliders
-function actualizarProgreso(id, valor) {
-    let barra = document.getElementById(id);
-    barra.style.width = valor + "%";
-    barra.setAttribute("aria-valuenow", valor);
-    barra.innerText = valor + "%";
-}
-
-// Función para cargar las barras progresivamente al entrar a la página
-function cargarBarras() {
-    setTimeout(() => actualizarProgreso('progress-aprendizaje', 80), 500);
-    setTimeout(() => actualizarProgreso('progress-creatividad', 65), 800);
-    setTimeout(() => actualizarProgreso('progress-productividad', 50), 1100);
-}
-
-// Seleccionar todas las opciones del dropdown para cambiar avatar
-document.querySelectorAll('.avatar-option').forEach(item => {
-    item.addEventListener('click', function(event) {
-        event.preventDefault(); // Evita que el enlace recargue la página
-        let avatarSrc = this.getAttribute('data-avatar'); // Obtiene la imagen seleccionada
-        document.getElementById('avatar-img').src = avatarSrc; // Cambia el avatar
-    });
-});
-
-// Cargar las barras al abrir la página
-window.onload = cargarBarras;
-
-
-//avatar
-
-document.querySelectorAll('.avatar-option').forEach(item => {
-    item.addEventListener('click', function(event) {
-        event.preventDefault(); // Evita que el enlace recargue la página
-        let avatarSrc = this.getAttribute('data-avatar'); // Obtiene la imagen seleccionada
-        document.getElementById('avatar-img').src = avatarSrc; // Cambia el avatar
-    });
-})
+document.addEventListener("DOMContentLoaded", activarDescarga);

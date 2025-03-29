@@ -1,16 +1,30 @@
+.container{
+    text-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .t-intro{
     margin-top: 50px;
     color: #AD3636;
 }
 
+.pregunta{
+    margin-bottom: 20px;
+}
+
 .exa{
     margin-top: 50px;
+   
 }
 
 .btn-exa{
     margin: 50px 0;
     display: flex;
     justify-content: center;
+    cursor: pointer;
 }
 
 .btn-examen{
@@ -24,3 +38,100 @@
         font-weight: 600;
         height: 40px;
 }
+
+
+
+/* pop-up */
+.sect1{
+    filter: blur(0px);
+}
+
+
+.popup {
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+    min-height: 65vh;
+    margin: auto;
+    top: 0;
+    display: none;
+}
+
+.popup-caja{
+    border-radius: 10px;
+    padding: 150px 0px 50px 0;
+    max-width: 900px;
+    min-width: 400px;
+    width: 40%;
+    border: 1px solid #888888;
+    box-shadow: 5px 10px 8px #888888;
+    background: linear-gradient(to right, #fc785af0, #d8363a, #AD3636, #7f1b33);;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    flex-direction: column;
+    display: flex;
+    margin: 149px auto;
+}
+
+.Pop-C1{
+display: flex;
+justify-content: end;
+margin: -120px 30px 50px 0;
+}
+
+.sig{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.icon-f{
+    display: none;
+    font-size: 35px;
+    color:#ffffff;
+    cursor: pointer;
+}
+
+.equis{
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+}
+.Pop-C2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pop-btn{
+    margin-top: 25px;
+    border-radius: 15px;
+    padding: 10px 15px;
+    border: 2px solid white;
+    background-color: white;
+    color: rgb(133, 50, 50);
+    font-weight: 600;
+}
+
+.pop-text{
+    text-align: center;
+    margin: 0 10px 0 10px;
+    font-size: 30px;
+}
+
+
+
+
+.certi{
+    margin-left: 0%;
+}
+
+@media(min-width:992px){
+    .certi{
+        margin-left: 15px;
+    }  
+}
+
