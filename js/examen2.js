@@ -1,4 +1,19 @@
 let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+
+//Ruta protegida por inicio de sesión
+
+//Verificar existencia de sesión
+const verificar = usuarios.every((item) => item.userLogged === false);
+
+console.log(verificar);
+
+for (let i = 0; i < usuarios.length; i++) {
+  if (verificar) {
+    window.location = "../index.html";
+  }
+} 
+
+
 const PopUp = document.querySelector(".popup");
 const BtnPopUp = document.querySelector(".pop-btn");
 const Sect1 = document.querySelector(".sect1");
@@ -100,35 +115,7 @@ function siguienteMódulo(){
 
 iconF.addEventListener('click', siguienteMódulo);
 
-function Accesoexamenes(){
-    /*  let currentUser = JSON.parse(localStorage.getItem('user')); */
-    for (let i = 0; i < usuarios.length; i++) {
-        let confirmarSesion = usuarios[i] ? usuarios[i].userLogged : false
-    
-     
-         if (confirmarSesion){
-             //si hay un usuario logueado, mostrarsu nombre y ocultar botones
-             
-             PopUp.style.display = 'none';
-             BtnPopUp.style.display = 'none';
-             iconF.style.display = 'none';
-             Sect1.style.filter = 'none';
-             TextoSig.style.display = 'none';
-             BtnExa.disabled = false; 
-             return
-         }
-        }
-        PopUp.style.display = 'flex';
-        BtnPopUp.style.display = 'flex';
-        iconF.style.display = 'flex';
-        Sect1.style.filter = 'flex';
-        TextoSig.style.display = 'flex';
-        BtnExa.disabled = true;  
-        TextoExa.textContent =`Para acceder a nuestro contenido Regístrate`; 
 
- }
-
-/*  document.addEventListener('DOMContentLoaded', Accesoexamenes); */
 
 
 function InvalidarExamen(){

@@ -350,14 +350,17 @@ iframe{
 
 .exa2{
     cursor: not-allowed;
+    pointer-events: none;
 }
 
 .exa3{
     cursor: not-allowed;
+    pointer-events: none;
 }
 
 .exaf{
     cursor: not-allowed;
+    pointer-events: none;
 }
 
 

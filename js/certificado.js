@@ -93,6 +93,8 @@ function activarDescarga() {
       /* BtnDescargar.style.cursor = 'pointer!important'; */
       BtnDescargar.style.background = "#7f1b33";
       BtnDescargar.disabled = false;
+      usuarios[i].certificado = true
+        localStorage.setItem("usuarios", JSON.stringify(usuarios))
       return
     }
   }
