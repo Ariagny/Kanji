@@ -1,6 +1,6 @@
 /* barra menu */
 .cont{
-    background-color: #7f1b33;
+    background-color: rgb(127, 27, 51);
 }
 .heade{
     margin: auto;
@@ -117,8 +117,10 @@
     margin-bottom: 65px;
 }
 .porcentajes{
-    width: 800px;
-    height: 600px;
+    min-width:800px;
+    min-height: 600px;
+    padding: 30px;
+    border-radius: 15px;
 }
 
 .tit{
@@ -152,11 +154,12 @@
   }
 
   .btn-des{
-    background-color: #4b4b4b;
+    background: #4b4b4b;
     border: none;
     border-radius: 10px;
     color: white;
     padding: 5px 5px;
+/*     cursor: not-allowed !important; */
   }
   
   .progress-bar {
@@ -164,4 +167,19 @@
     background-color: #9b3535!important;
 
 }
+
+.progreso1{
+    width: 0% ;
+}
+
+.progreso2{
+    width: 0% ;
+}
+
+.progreso3{
+    width: 0% ;
+}
  
+.progresoG{
+    width: 0% ;
+}

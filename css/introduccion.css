@@ -206,6 +206,22 @@ iframe{
     color: black;
 }
 
+.cand2{
+    color: #4b4b4b;
+    font-size: 18px;
+}
+
+.cand3{
+    color: #4b4b4b;
+    font-size: 18px;
+}
+
+.cand4{
+    color: #4b4b4b;
+    font-size: 18px;
+}
+
+
 .icon-mod{
     color: #AD3636;
     font-size: 18px;
@@ -331,6 +347,19 @@ iframe{
 }
 
 }
+
+.exa2{
+    cursor: not-allowed;
+}
+
+.exa3{
+    cursor: not-allowed;
+}
+
+.exaf{
+    cursor: not-allowed;
+}
+
 
 .sig{
     display: flex;

@@ -58,72 +58,57 @@ const EXA1 = document.querySelector(".exa1");
 const EXA2 = document.querySelector(".exa2");
 const EXA3 = document.querySelector(".exa3");
 const EXAF = document.querySelector(".exaf");
+const Cand2 = document.querySelector(".cand2");
+const Cand3 = document.querySelector(".cand3");
+const Cand4 = document.querySelector(".cand4");
 
 
 
-function IngresarExamen1(){
-    /*  let currentUser = JSON.parse(localStorage.getItem('user')); */
+function InvalidarExamen2(){
     for (let i = 0; i < usuarios.length; i++) {
-        let confirmarSesion = usuarios[i] ? usuarios[i].userLogged : false
-    
-         if (confirmarSesion){
-             //si hay un usuario logueado, ir al modulo 1
-             window.location = "../vistas/examen1.html"
-             return
-    
-         }
+        if(usuarios[i].userLogged && usuarios[i].progreso >= 25 ){
+          /*   EXA2.classList.remove("Disabled"); */
+            EXA2.style.cursor = "pointer"
+            Cand2.style.color = "#7f1b33";
+            /* BtnExa.style.cursor = 'not-allowed'; */
+            return
+            }
         }
-        window.location = "../vistas/inicio-sesion.html"
-}
-EXA1.addEventListener("click", IngresarExamen1);
 
-
-
-function IngresarExamen2(){
-    /*  let currentUser = JSON.parse(localStorage.getItem('user')); */
-
-    for (let i = 0; i < usuarios.length; i++) {
-        let confirmarSesion = usuarios[i] ? usuarios[i].userLogged : false
-    
-         if (confirmarSesion){
-             //si hay un usuario logueado, ir al modulo 1
-             window.location = "../vistas/examen2.html"
-             return
-         }
-        }
-        window.location = "../vistas/inicio-sesion.html"
-}
-EXA2.addEventListener("click", IngresarExamen2);
-
-function IngresarExamen3(){
-    /*  let currentUser = JSON.parse(localStorage.getItem('user')); */
-    for (let i = 0; i < usuarios.length; i++) {
-        let confirmarSesion = usuarios[i] ? usuarios[i].userLogged : false
-    
-         if (confirmarSesion){
-             //si hay un usuario logueado, ir al modulo 1
-             window.location = "../vistas/examen3.html"
-             return
-    
-         } 
-        }
-        window.location = "../vistas/inicio-sesion.html"
-}
-EXA3.addEventListener("click", IngresarExamen3);
-
-function IngresarExamenF(){
-    /*  let currentUser = JSON.parse(localStorage.getItem('user')); */
-    for (let i = 0; i < usuarios.length; i++) {
         
-        let confirmarSesion = usuarios[i] ? usuarios[i].userLogged : false
-    
-         if (confirmarSesion){
-             //si hay un usuario logueado, ir al modulo 1
-             window.location = "../vistas/examen-final.html"
-             return
-    
-         }
         }
-        window.location = "../vistas/inicio-sesion.html"
-}
-EXAF.addEventListener("click", IngresarExamenF);
+ document.addEventListener('DOMContentLoaded',InvalidarExamen2); 
+
+
+ function InvalidarExamen3(){
+    for (let i = 0; i < usuarios.length; i++) {
+        if(usuarios[i].userLogged && usuarios[i].progreso >= 50 ){
+          /*   EXA2.classList.remove("Disabled"); */
+            EXA3.style.cursor = "pointer"
+            Cand3.style.color = "#7f1b33";
+            
+            /* BtnExa.style.cursor = 'not-allowed'; */
+            return
+            }
+        }
+
+        
+        }
+ document.addEventListener('DOMContentLoaded',InvalidarExamen3); 
+
+
+ function InvalidarExamen4(){
+    for (let i = 0; i < usuarios.length; i++) {
+        if(usuarios[i].userLogged && usuarios[i].progreso >= 75 ){
+          /*   EXA2.classList.remove("Disabled"); */
+            EXAF.style.cursor = "pointer"
+            Cand4.style.color = "#7f1b33";
+            /* BtnExa.style.cursor = 'not-allowed'; */
+            return
+            }
+        }
+
+        
+        }
+ document.addEventListener('DOMContentLoaded',InvalidarExamen4); 
+        
