@@ -76,6 +76,15 @@ function Barrras() {
     if(usuarios[i].userLogged){
     BarraG.style.width = `${usuarios[i].progreso}%`;
     BarraG.textContent = `${usuarios[i].progreso}%`;
+
+    Barra1.style.width = `${usuarios[i].progreso1}%`;
+    Barra1.textContent = `${usuarios[i].progreso1}%`;
+
+    Barra2.style.width = `${usuarios[i].progreso2}%`;
+    Barra2.textContent = `${usuarios[i].progreso2}%`;
+
+    Barra3.style.width = `${usuarios[i].progreso3}%`;
+    Barra3.textContent = `${usuarios[i].progreso3}%`;
     }
     
   }

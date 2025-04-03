@@ -3,6 +3,7 @@
     background-color: #7f1b33;
 }
 .heade{
+    z-index: 25;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -88,6 +89,7 @@
     display: flex;
     align-items: center;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .nav-ini{
@@ -99,9 +101,9 @@
     margin-right: 5px;
     font-size: 35px;
 }
-
 .nav-reg{
     margin-right: 5px;
+    cursor: pointer;
 }
 
 .navbar-toggler:focus {

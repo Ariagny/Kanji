@@ -50,6 +50,19 @@ btnCerrarSesion.style.display = "none"
 
 document.addEventListener('DOMContentLoaded', verificarSesion);
 
+function cerrarSesion (){
+
+  for (let i = 0; i < usuarios.length; i++) {
+  if(usuarios[i].userLogged){
+      usuarios[i].userLogged = false
+      localStorage.setItem("usuarios", JSON.stringify(usuarios))
+      window.location = "../index.html"
+  }
+  }
+  }
+  
+btnCerrarSesion.addEventListener("click",cerrarSesion)
+
 const PopUp = document.querySelector(".popup");
 const BtnPopUp = document.querySelector(".pop-btn");
 const Sect1 = document.querySelector(".sect1");
@@ -119,6 +132,7 @@ function ValidarRespuestas(e) {
       TextoSig.style.display = "flex";
       BtnExa.style.cursor = "not-allowed";
       usuarios[i].progreso += 25;
+      usuarios[i].progreso1 += 100;
       localStorage.setItem("usuarios", JSON.stringify(usuarios));
     } else {
       PopUp.style.display = "flex";

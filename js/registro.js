@@ -15,6 +15,9 @@ function registrarUser(e){
         userLogged: false,
         certificado: false,
         progreso: 0,
+        progreso1: 0,
+        progreso2: 0,
+        progreso3: 0,
     }
     //enviar información a local storage
 
