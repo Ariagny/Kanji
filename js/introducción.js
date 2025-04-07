@@ -86,7 +86,7 @@ function InvalidarExamen2(){
         if(usuarios[i].userLogged && usuarios[i].progreso >= 50 ){
           /*   EXA2.classList.remove("Disabled"); */
             EXA3.style.cursor = "pointer"
-            EXA2.style.pointerEvents = "all"
+            EXA3.style.pointerEvents = "all"
             Cand3.style.color = "#7f1b33";
             
             /* BtnExa.style.cursor = 'not-allowed'; */
@@ -104,7 +104,7 @@ function InvalidarExamen2(){
         if(usuarios[i].userLogged && usuarios[i].progreso >= 75 ){
           /*   EXA2.classList.remove("Disabled"); */
             EXAF.style.cursor = "pointer"
-            EXA2.style.pointerEvents = "all"
+            EXAF.style.pointerEvents = "all"
             Cand4.style.color = "#7f1b33";
             /* BtnExa.style.cursor = 'not-allowed'; */
             return

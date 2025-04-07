@@ -72,6 +72,11 @@ const TextoSig = document.querySelector(".pop-next")
 const iconF = document.querySelector(".icon-f");
 const BtnExa = document.querySelector(".btn-examen");
 const Formulario = document.querySelector("#formulario");
+const Textoresp = document.querySelector(".pop-resp");
+const ImgPop = document.querySelector(".img-pop");
+const ImgPop2 = document.querySelector(".img-pop2");
+const ImgPop3 = document.querySelector(".img-pop3");
+const ImgPop4 = document.querySelector(".img-pop4");
 
 function capturarRespuestas(){
         // Capturamos las respuestas seleccionadas
@@ -120,31 +125,63 @@ for (let i = 0; i < arrayRespuestasUser.length; i++) {
 
 //condicional de si gane o perdí el examen
 for (let i = 0; i < usuarios.length; i++) {
-    if(usuarios[i].userLogged && acumulado >= 3){
-    PopUp.style.display = 'flex';
-    iconF.style.display = 'flex';
-    Sect1.style.filter = 'blur(5px)';
-    TextoExa.textContent =`Ganaste el examen`;
-    TextoSig.style.display = 'flex';
-    BtnExa.style.cursor = 'not-allowed';
-    usuarios[i].progreso += 25
-    usuarios[i].progreso2 += 100;
-    localStorage.setItem("usuarios", JSON.stringify(usuarios))
-    }else{
-        PopUp.style.display = 'flex';
-        iconF.style.display = 'none';
-        Sect1.style.filter = 'blur(5px)';
-        TextoExa.textContent =`Debes repetir el examen`;
-        TextoSig.style.display = 'none';
-        BtnExa.style.cursor = 'not-allowed';
+    if (usuarios[i].userLogged && acumulado === 5) {
+      PopUp.style.display = "flex";
+      iconF.style.display = "flex";
+      Sect1.style.filter = "blur(5px)";
+      TextoExa.textContent = `Ganaste el examen`;
+      Textoresp.textContent = `Tu puntaje es ${acumulado}`;
+      ImgPop.style.display = "flex"
+      ImgPop2.style.display = "none"
+      ImgPop3.style.display = "none"
+      ImgPop4.style.display = "none"
+      TextoSig.style.display = "flex";
+      BtnExa.style.cursor = "not-allowed";
+      usuarios[i].progreso += 25;
+      usuarios[i].progreso2 += 100; 
+      localStorage.setItem("usuarios", JSON.stringify(usuarios));
+    }else if (usuarios[i].userLogged && acumulado === 3 || acumulado == 4) {
+      PopUp.style.display = "flex";
+      iconF.style.display = "flex";
+      Sect1.style.filter = "blur(5px)";
+      TextoExa.textContent = `Ganaste el examen`;
+      Textoresp.textContent = `Tu puntaje es ${acumulado}`;
+      ImgPop.style.display = "none"
+      ImgPop2.style.display = "flex"
+      ImgPop3.style.display = "none"
+      ImgPop4.style.display = "none"
+      TextoSig.style.display = "flex";
+      BtnExa.style.cursor = "not-allowed";
+      usuarios[i].progreso += 25;
+      usuarios[i].progreso2 += 100;
+      localStorage.setItem("usuarios", JSON.stringify(usuarios));
+    }else if (usuarios[i].userLogged && acumulado === 0) {
+      PopUp.style.display = "flex";
+      iconF.style.display = "none";
+      Sect1.style.filter = "blur(5px)";
+      TextoExa.textContent = `Debes repetir el examen`;
+      Textoresp.textContent = `Tu puntaje es ${acumulado}`;
+      ImgPop.style.display = "none"
+      ImgPop2.style.display = "none"
+      ImgPop3.style.display = "none"
+      ImgPop4.style.display = "flex"
+      TextoSig.style.display = "none";
+      BtnExa.style.cursor = "not-allowed";
+      localStorage.setItem("usuarios", JSON.stringify(usuarios));
+    } else {
+      PopUp.style.display = "flex";
+      iconF.style.display = "none";
+      Sect1.style.filter = "blur(5px)";
+      TextoExa.textContent = `Debes repetir el examen`;
+      Textoresp.textContent = `Tu puntaje es ${acumulado}`;
+      ImgPop.style.display = "none"
+      ImgPop2.style.display = "none"
+      ImgPop3.style.display = "flex"
+      ImgPop4.style.display = "none"
+      TextoSig.style.display = "none";
+      BtnExa.style.cursor = "not-allowed";
     }
-    }
-
-/* for (const key in respuestasCorrectas) {
-    console.log(respuestasCorrectas[key])
-    
-} */
-
+  }
 }
 
 Formulario.addEventListener("submit", ValidarRespuestas)

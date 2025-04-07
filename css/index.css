@@ -247,6 +247,12 @@ margin: -120px 30px 50px 0;
     color: white;
 }
 
+.imgbanner{
+    width: 320px;
+    height: 280px;
+    display: flex;
+    margin: 20px auto;
+}
 @media(min-width:992px){
     .imgbanner{
         width: auto;
@@ -277,12 +283,6 @@ margin: -120px 30px 50px 0;
     }
 }
 
-.imgbanner{
-    width: 320px;
-    height: 280px;
-    display: flex;
-    margin: 20px auto;
-}
 
 
 /* Bneficios 1*/
@@ -538,10 +538,8 @@ margin: -120px 30px 50px 0;
 
 .imgcard1{
     position: absolute;
-    top: -60px;
+    top: -67px;
     width: 180px;
-    height: 140px;
-    border-radius: 50%;
     border: none;
 }
 
@@ -549,17 +547,13 @@ margin: -120px 30px 50px 0;
     position: absolute;
     top: -60px;
     width: 180px;
-    height: 140px;
-    border-radius: 50%;
     border: none;
 }
 
 .imgcard3{
     position: absolute;
-    top: -60px;
+    top: -47px;
     width: 180px;
-    height: 140px;
-    border-radius: 50%;
     border: none;
 }
 

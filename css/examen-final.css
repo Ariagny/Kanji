@@ -192,7 +192,7 @@
 .Pop-C1{
 display: flex;
 justify-content: end;
-margin: -120px 30px 50px 0;
+margin: -120px 30px 10px 0;
 }
 
 .sig{
@@ -200,7 +200,7 @@ margin: -120px 30px 50px 0;
     justify-content: center;
     align-items:center ;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 .icon-f{
@@ -236,6 +236,30 @@ margin: -120px 30px 50px 0;
     text-align: center;
     margin: 0 10px 0 10px;
     font-size: 30px;
+}
+
+.pop-resp{
+    font-size: 20px;
+}
+
+.img-pop{
+display: none;
+width: 130%;
+}
+
+.img-pop2{
+display: none;
+width: 95%;
+}
+
+.img-pop3{
+display: none;
+width: 80%;
+}
+
+.img-pop4{
+display: none;
+width: 80%;
 }
 
 
