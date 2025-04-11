@@ -311,10 +311,15 @@ margin: -120px 30px 50px 0;
     align-items: center;
 }
 
+.imgbeneficios{
+    height: 280px;
+    display: flex;
+    margin: 20px auto;
+}
+
 @media(min-width:992px){
     .imgbeneficios{
-        width: auto;
-        height: auto;
+        height: 300px;
         display: flex;
         margin: auto;
     }
@@ -342,15 +347,14 @@ margin: -120px 30px 50px 0;
     
 }
 
-.imgbeneficios{
-    width: 320px;
-    height: 280px;
-    display: flex;
-    margin: 20px auto;
-}
 
 
 /* Bneficios 2*/
+.imgbeneficios2{
+    height: 360px;
+    display: flex;
+    margin: 20px auto;
+}
 .beneficios2{
     display: flex;
     flex-direction: column;
@@ -369,8 +373,7 @@ margin: -120px 30px 50px 0;
 
 @media(min-width:992px){
     .imgbeneficios2{
-        width: auto;
-        height: auto;
+        height: 400px;
         display: flex;
         margin: auto;
     }
@@ -386,13 +389,15 @@ margin: -120px 30px 50px 0;
     }
 }
 
-.imgbeneficios2{
-    width: 320px;
-    height: 280px;
+
+/* Bneficios 3 */
+
+.imgbeneficios3{
+    height: 300px;
     display: flex;
     margin: 20px auto;
 }
-/* Bneficios 3 */
+
 .beneficios3{
     display: flex;
     flex-direction: column;
@@ -411,8 +416,7 @@ margin: -120px 30px 50px 0;
 
 @media(min-width:992px){
     .imgbeneficios3{
-        width: auto;
-        height: auto;
+        height: 340px;;
         display: flex;
         margin: auto;
     }
@@ -428,14 +432,14 @@ margin: -120px 30px 50px 0;
     }
 }
 
-.imgbeneficios3{
-    width: 320px;
-    height: 280px;
-    display: flex;
-    margin: 20px auto;
-}
 
 /* Bneficios 4*/
+
+.imgbeneficios4{
+    height: 300px;
+    display: flex;
+    margin: 20px 40px 29px -23px;
+}
 .beneficios4{
     display: flex;
     flex-direction: column;
@@ -455,8 +459,7 @@ margin: -120px 30px 50px 0;
 
 @media(min-width:992px){
     .imgbeneficios4{
-        width: auto;
-        height: auto;
+        height: 340px;
         display: flex;
         margin: auto;
     }
@@ -472,12 +475,6 @@ margin: -120px 30px 50px 0;
     }
 }
 
-.imgbeneficios4{
-    width: 320px;
-    height: 280px;
-    display: flex;
-    margin: 20px auto;
-}
 
 
 /* Cards */
@@ -641,8 +638,7 @@ margin: -120px 30px 50px 0;
 }
 
 .img-call{
-    width: 240px;
-    height: 200px;
+    height: 350px;
     margin-top: 40px;
 }
 
@@ -654,8 +650,7 @@ margin: -120px 30px 50px 0;
     }
     
     .img-call{
-        width: 280px;
-        height: 240px;
+        height: 420px;
         margin-top: 60px;
     }   
 }

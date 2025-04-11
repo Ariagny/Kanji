@@ -5,13 +5,7 @@ let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 //Verificar existencia de sesión
 const verificar = usuarios.every((item) => item.userLogged === false);
 
-console.log(verificar);
-
-for (let i = 0; i < usuarios.length; i++) {
-  if (verificar) {
-    window.location = "../index.html";
-  }
-} 
+verificar ? window.location = "../index.html" : null 
 
 const btnIniciarSesion = document.querySelector(".nav-link4");
 const btnRegistroSesion = document.querySelector(".nav-link5");

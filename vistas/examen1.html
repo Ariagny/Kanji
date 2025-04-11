@@ -89,28 +89,33 @@
                   <div class="carousel-inner">
       
                       <form class="exa" id="formulario">
-      
+
                       <!-- Pregunta 1 -->
                       <div class="carousel-item active pregunta">
                           <h5 for="pregunta1">1. ¿Cuál es tu color favorito?</h5>
                           <div class="questions">
                           <div class="form-check col-lg-5">
-                            <button class="answer" type="button"> <input class="form-check-input" type="radio" id="colorRojo" name="pregunta1" value="Rojo"> Rojo<br></button>
+                            <input class="form-check-input d-none" type="radio" id="colorRojo" name="pregunta1" value="Rojo">
+                            <label class="answer" for="colorRojo">Rojo</label>
                           </div>
                           <div class="form-check col-lg-5">
-                              <input class="form-check-input " type="radio" id="colorAzul" name="pregunta1" value="Azul"> 
+                              <input class="form-check-input d-none " type="radio" id="colorAzul" name="pregunta1" value="Azul"> 
                               <label class="answer" for="colorAzul">Azul</label> 
                             
                           </div>
                           <div class="form-check col-lg-5">
-                            <button class="answer" type="button"><input class="form-check-input" type="radio" id="colorVerde" name="pregunta1" value="Verde"> Verde<br></button>
+                            <input class="form-check-input d-none" type="radio" id="colorVerde" name="pregunta1" value="Verde">
+                            <label class="answer" for="colorVerde">Verde</label> 
+                            
                           </div>
                           <div class="form-check col-lg-5">
-                            <button class="answer" type="button"><input class="form-check-input" type="radio" id="colorAmarillo" name="pregunta1" value="Amarillo"> Amarillo<br></button>
+                            <input class="form-check-input d-none" type="radio" id="colorAmarillo" name="pregunta1" value="Amarillo">
+                            <label class="answer" for="colorAmarillo">Amarillo</label> 
+                            
                           </div>
                         </div>
                           <div class="mt-3">
-                              <button class="btn btn-primary" data-bs-target="#questionCarousel" data-bs-slide="next">Siguiente</button>
+                              <button class="btn-sig" data-bs-target="#questionCarousel" data-bs-slide="next">Siguiente</button>
                           </div>
                           </div>
                           
@@ -118,42 +123,54 @@
                       <!-- Pregunta 2 -->
                       <div class="carousel-item pregunta">
                           <h5 for="pregunta2">2. ¿Qué deporte prefieres?</h5>
-                          <div class="form-check">
-                              <input class="form-check-input" type="radio" id="deporteFutbol" name="pregunta2" value="Fútbol"> Fútbol<br>
+                          <div class="questions">
+                          <div class="form-check col-lg-5">
+                              <input class="form-check-input d-none" type="radio" id="deporteFutbol" name="pregunta2" value="Fútbol">
+                              <label class="answer" for="deporteFutbol">Fútbol</label> 
                           </div>
-                          <div class="form-check">
-                              <input class="form-check-input" type="radio" id="deporteBaloncesto" name="pregunta2" value="Baloncesto"> Baloncesto<br>
+                          <div class="form-check col-lg-5">
+                              <input class="form-check-input d-none" type="radio" id="deporteBaloncesto" name="pregunta2" value="Baloncesto"> 
+                              <label class="answer" for="deporteBaloncesto">Baloncesto</label>
                           </div>
-                          <div class="form-check">
-                              <input class="form-check-input" type="radio" id="deporteBeisbol" name="pregunta2" value="Beisbol"> Béisbol<br>
+                          <div class="form-check col-lg-5">
+                              <input class="form-check-input d-none" type="radio" id="deporteBeisbol" name="pregunta2" value="Beisbol"> 
+                              <label class="answer" for="deporteBeisbol">Béisbol</label>
+                            </div>
+                            <div class="form-check col-lg-5">
+                              <input class="form-check-input d-none" type="radio" id="deporteTenis" name="pregunta2" value="Tenis">
+                              <label class="answer" for="deporteTenis">Tenis</label>
                           </div>
-                          <div class="form-check">
-                              <input class="form-check-input" type="radio" id="deporteTenis" name="pregunta2" value="Tenis"> Tenis<br>
-                          </div>
+                        </div>
                           <div class="mt-3">
-                              <button class="btn btn-secondary" data-bs-target="#questionCarousel" data-bs-slide="prev">Anterior</button>
-                              <button class="btn btn-primary" data-bs-target="#questionCarousel" data-bs-slide="next">Siguiente</button>
+                              <button class="btn-ant" data-bs-target="#questionCarousel" data-bs-slide="prev">Anterior</button>
+                              <button class="btn-sig" data-bs-target="#questionCarousel" data-bs-slide="next">Siguiente</button>
                           </div>
                       </div>
                       
                       <!-- Pregunta 3 -->
                       <div class="carousel-item  pregunta">
                           <h5 for="pregunta3">3. ¿Cuál es tu comida favorita?</h5>
-                          <div class="form-check">
-                              <input class="form-check-input" type="radio" id="comidaPizza" name="pregunta3" value="Pizza"> Pizza<br>
+                          <div class="questions">
+                          <div class="form-check col-lg-5">
+                              <input class="form-check-input d-none" type="radio" id="comidaPizza" name="pregunta3" value="Pizza">
+                              <label class="answer" for="comidaPizza">Pizza</label>
                           </div>
-                          <div class="form-check">
-                              <input class="form-check-input" type="radio" id="comidaSushi" name="pregunta3" value="Sushi"> Sushi<br>
+                          <div class="form-check col-lg-5">
+                              <input class="form-check-input d-none" type="radio" id="comidaSushi" name="pregunta3" value="Sushi">
+                              <label class="answer" for="comidaSushi">Sushi</label>
                           </div>
-                          <div class="form-check">
-                              <input class="form-check-input" type="radio" id="comidaHamburguesa" name="pregunta3" value="Hamburguesa"> Hamburguesa<br>
+                          <div class="form-check col-lg-5">
+                              <input class="form-check-input d-none" type="radio" id="comidaHamburguesa" name="pregunta3" value="Hamburguesa"> 
+                              <label class="answer" for="comidaHamburguesa">Hamburguesa</label>
                           </div>
-                          <div class="form-check">
-                              <input class="form-check-input" type="radio" id="comidaPasta" name="pregunta3" value="Pasta"> Pasta<br>
+                          <div class="form-check col-lg-5">
+                              <input class="form-check-input d-none" type="radio" id="comidaPasta" name="pregunta3" value="Pasta"> 
+                              <label class="answer" for="comidaPasta">Pasta</label>
                           </div>
+                        </div>
                           <div class="mt-3">
-                              <button class="btn btn-secondary" data-bs-target="#questionCarousel" data-bs-slide="prev">Anterior</button>
-                              <button class="btn btn-primary" data-bs-target="#questionCarousel" data-bs-slide="next">Siguiente</button>
+                              <button class="btn-ant" data-bs-target="#questionCarousel" data-bs-slide="prev">Anterior</button>
+                              <button class="btn-sig" data-bs-target="#questionCarousel" data-bs-slide="next">Siguiente</button>
                           </div>
                       </div>
                       
@@ -161,42 +178,54 @@
                       <!-- Pregunta 4 -->
                       <div class="carousel-item pregunta">
                           <h5 for="pregunta4">4. ¿Qué música prefieres?</h5>
-                          <div class="form-check">
-                              <input class="form-check-input" type="radio" id="musicaRock" name="pregunta4" value="Rock"> Rock<br>
+                          <div class="questions">
+                          <div class="form-check col-lg-5">
+                              <input class="form-check-input d-none" type="radio" id="musicaRock" name="pregunta4" value="Rock"> 
+                              <label class="answer" for="musicaRock">Rock</label>
                           </div>
-                          <div class="form-check">
-                              <input class="form-check-input" type="radio" id="musicaPop" name="pregunta4" value="Pop"> Pop<br>
+                          <div class="form-check col-lg-5">
+                              <input class="form-check-input d-none" type="radio" id="musicaPop" name="pregunta4" value="Pop"> 
+                              <label class="answer" for="musicaPop">Pop</label>
                           </div>
-                          <div class="form-check">
-                              <input class="form-check-input" type="radio" id="musicaJazz" name="pregunta4" value="Jazz"> Jazz<br>
+                          <div class="form-check col-lg-5">
+                              <input class="form-check-input d-none" type="radio" id="musicaJazz" name="pregunta4" value="Jazz"> 
+                              <label class="answer" for="musicaJazz">Pasta</label>
                           </div>
-                          <div class="form-check">
-                              <input class="form-check-input" type="radio" id="musicaClasica" name="pregunta4" value="Clasica"> Clásica<br>
+                          <div class="form-check col-lg-5">
+                              <input class="form-check-input d-none" type="radio" id="musicaClasica" name="pregunta4" value="Clasica"> 
+                              <label class="answer" for="musicaClasica">Clásica</label>
                           </div>
+                        </div>
                           <div class="mt-3">
-                              <button class="btn btn-secondary" data-bs-target="#questionCarousel" data-bs-slide="prev">Anterior</button>
-                              <button class="btn btn-primary" data-bs-target="#questionCarousel" data-bs-slide="next">Siguiente</button>
+                              <button class="btn-ant" data-bs-target="#questionCarousel" data-bs-slide="prev">Anterior</button>
+                              <button class="btn-sig" data-bs-target="#questionCarousel" data-bs-slide="next">Siguiente</button>
                           </div>
                       </div>
                       
                       <!-- Pregunta 5 -->
                       <div class="carousel-item pregunta">
                           <h5 for="pregunta5">5. ¿Cuál es tu animal favorito?</h5>
-                          <div class="form-check">
-                              <input class="form-check-input" type="radio" name="pregunta5" id="animalPerro" value="Perro"> Perro<br>
+                          <div class="questions">
+                          <div class="form-check col-lg-5">
+                              <input class="form-check-input d-none" type="radio" name="pregunta5" id="animalPerro" value="Perro"> Perro
+                              <label class="answer" for="musicaClasica">Clásica</label>
                           </div>
-                          <div class="form-check">
-                              <input class="form-check-input" type="radio" name="pregunta5" id="animalGato" value="Gato">Gato<br>
+                          <div class="form-check col-lg-5">
+                              <input class="form-check-input d-none" type="radio" name="pregunta5" id="animalGato" value="Gato">Gato
+                              <label class="answer" for="musicaClasica">Clásica</label>
                           </div>
-                          <div class="form-check">
-                              <input class="form-check-input" type="radio" name="pregunta5" id="animalPajaro" value="Pajaro"> Pájaro<br>
+                          <div class="form-check col-lg-5">
+                              <input class="form-check-input d-none" type="radio" name="pregunta5" id="animalPajaro" value="Pajaro"> Pájaro
+                              <label class="answer" for="musicaClasica">Clásica</label>
                           </div>
-                          <div class="form-check">
-                              <input class="form-check-input" type="radio" name="pregunta5" id="animalConejo" value="Conejo"> Conejo<br>
+                          <div class="form-check col-lg-5">
+                              <input class="form-check-input d-none" type="radio" name="pregunta5" id="animalConejo" value="Conejo"> Conejo
+                              <label class="answer" for="musicaClasica">Clásica</label>
                           </div>
+                        </div>
                           <div class="mt-3 btn-exa">
-                              <button class="btn btn-secondary" data-bs-target="#questionCarousel" data-bs-slide="prev">Anterior</button>
-                              <button class="btn btn-success btn-examen" type="submit"  disabled>Enviar formulario</button>
+                              <button class="btn-ant" data-bs-target="#questionCarousel" data-bs-slide="prev">Anterior</button>
+                              <button class="btn-exa" type="submit"  disabled>Enviar formulario</button>
                           </div>
                       </div>
                   </form>

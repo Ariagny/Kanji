@@ -194,15 +194,38 @@
     background-color: #4b4b4b;
 }
 
-.form-check-input:checked {
-    background-color: #c73838 !important;
-    border-color: #bd1616 !important;
- }
- 
- .form-check:checked answer {
-    background-color: #c73838 !important;
+ .form-check-input:checked ~ .answer {
+    background-color:#AD3636;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+  }
 
- }
+  .btn-sig{
+    background-color: #4a4a4a;
+    margin-top: 20px;
+    margin-left: 25px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-size:15px ;
+    color: white;
+    font-weight: 600;
+    height: 40px;
+    width: 100px;
+  }
+  .btn-ant{
+    background-color: #6c757d;
+    margin-top: 20px;
+    margin-left: 25px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-size:15px ;
+    color: white;
+    font-weight: 600;
+    height: 40px;
+    width: 100px;
+  }
 
 /* pop-up */
 .sect1{
