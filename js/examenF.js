@@ -145,7 +145,6 @@ for (let i = 0; i < usuarios.length; i++) {
       TextoSig.style.display = "flex";
       BtnExa.style.cursor = "not-allowed";
       usuarios[i].progreso += 25;
-      usuarios[i].progreso1 += 100;
       localStorage.setItem("usuarios", JSON.stringify(usuarios));
     }else if (usuarios[i].userLogged && acumulado === 7 || acumulado === 8 || acumulado === 9) {
       PopUp.style.display = "flex";
@@ -160,7 +159,6 @@ for (let i = 0; i < usuarios.length; i++) {
       TextoSig.style.display = "flex";
       BtnExa.style.cursor = "not-allowed";
       usuarios[i].progreso += 25;
-      usuarios[i].progreso1 += 100;
       localStorage.setItem("usuarios", JSON.stringify(usuarios));
     }else if (usuarios[i].userLogged && acumulado === 0) {
       PopUp.style.display = "flex";
