@@ -195,6 +195,7 @@ iframe{
 .img-plan2{
     margin-left: 0px;
     width: 220px;
+    margin-bottom: 20px;
 }
 
 .des-plan2{
@@ -208,11 +209,13 @@ iframe{
 .img-plan3{
     margin-left: 0px;
     height: 195px;
+    margin-bottom: 20px;
 }
 
 .img-plan4{
     margin-left: 0px;
     width: 230px;
+    margin-bottom: 20px;
 }
 
 .tit-plan{

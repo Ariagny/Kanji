@@ -135,8 +135,8 @@ function ValidarRespuestas(e) {
       ImgPop4.style.display = "none"
       TextoSig.style.display = "flex";
       BtnExa.style.cursor = "not-allowed";
-/*       usuarios[i].progreso += 25;
-      usuarios[i].progreso1 += 100;  */
+       usuarios[i].progreso += 25;
+      usuarios[i].progreso1 += 100; 
       localStorage.setItem("usuarios", JSON.stringify(usuarios));
     }else if (usuarios[i].userLogged && acumulado === 3 || acumulado == 4) {
       PopUp.style.display = "flex";
@@ -150,8 +150,8 @@ function ValidarRespuestas(e) {
       ImgPop4.style.display = "none"
       TextoSig.style.display = "flex";
       BtnExa.style.cursor = "not-allowed";
-/*       usuarios[i].progreso += 25;
-      usuarios[i].progreso1 += 100; */
+      usuarios[i].progreso += 25;
+      usuarios[i].progreso1 += 100; 
       localStorage.setItem("usuarios", JSON.stringify(usuarios));
     }else if (usuarios[i].userLogged && acumulado === 0) {
       PopUp.style.display = "flex";
@@ -185,9 +185,9 @@ function ValidarRespuestas(e) {
 Formulario.addEventListener("submit", ValidarRespuestas);
 
 function QuitarPopUp() {
-  PopUp.style.display = "none";
+/*   PopUp.style.display = "none";
   Sect1.style.filter = "none";
-  BtnExa.style.cursor = "Pointer";
+  BtnExa.style.cursor = "Pointer"; */
   window.location = "../vistas/introduccion.html";
 }
 

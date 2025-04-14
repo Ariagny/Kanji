@@ -182,9 +182,9 @@ for (let i = 0; i < usuarios.length; i++) {
 Formulario.addEventListener("submit", ValidarRespuestas)
 
 function QuitarPopUp(){
-    PopUp.style.display = 'none';
+/*     PopUp.style.display = 'none';
     Sect1.style.filter = 'none'; 
-    BtnExa.style.cursor = 'Pointer';
+    BtnExa.style.cursor = 'Pointer'; */
      window.location = "../vistas/introduccion.html"
 
 }
