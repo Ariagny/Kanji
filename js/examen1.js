@@ -24,7 +24,7 @@ function verificarSesion(){
 
     if (confirmarSesion){
         //si hay un usuario logueado, mostrarsu nombre y ocultar botones
-        SaludoUsuario.textContent =`Hola, ${usuarios[i].userN}`;
+        SaludoUsuario.textContent =`Hola, ${usuarios[i].userNU}`;
         btnIniciarSesion.style.display = 'none';
         btnRegistroSesion.style.display = 'none';
         btnUsuario.style.display = 'flex';
@@ -165,7 +165,7 @@ function ValidarRespuestas(e) {
       ImgPop4.style.display = "flex"
       TextoSig.style.display = "none";
       BtnExa.style.cursor = "not-allowed";
-      localStorage.setItem("usuarios", JSON.stringify(usuarios));
+      
     } else {
       PopUp.style.display = "flex";
       iconF.style.display = "none";

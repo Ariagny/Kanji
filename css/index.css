@@ -32,19 +32,6 @@
     text-decoration: none;
 }
 
-.nav-link2{
-    margin: auto 5px;
-    
-    align-items: center;
-    text-decoration: none;
-}
-
-.nav-link3{
-    margin: auto 5px;
-    
-    align-items: center;
-    text-decoration: none;
-}
 
 .nav-link4{
     margin: auto 5px;
@@ -61,6 +48,7 @@
 }
 
 .nav-link6{
+    text-transform: capitalize;
     margin: auto 5px;
     color: white;
     font-size: large;

@@ -10,7 +10,7 @@ function validarUsuario (e){
     e.preventDefault();
     //llamar la información de local storage
     for (let i = 0; i < usuarios.length; i++) {
-      if (Username.value === usuarios[i].userN && Password.value === usuarios[i].userP){
+      if (Username.value === usuarios[i].userNU && Password.value === usuarios[i].userP){
     
         window.location = "../index.html"
         usuarios[i].userLogged = true

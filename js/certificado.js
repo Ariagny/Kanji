@@ -56,7 +56,7 @@ function NombreUsuario() {
 
     if (confirmarSesion) {
       //si hay un usuario logueado, mostrarsu nombre y ocultar botones
-      NombreU.textContent = `${usuarios[i].userN}`;
+      NombreU.textContent = `${usuarios[i].userNU}`;
       return;
     }
   }
