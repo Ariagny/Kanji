@@ -34,10 +34,12 @@
         flex-direction: column;
         justify-content: center;
     }
-
+    .btnre{
+        border-radius: 45px !important;
+    }
     .btn-inic {
         margin-top: 15px;
-        border-radius: 10%;
+        border-radius: 45px;
         padding: 10px 15px;
         border: 2px solid  #d8363a;
         background-color: white;
@@ -46,7 +48,7 @@
 
     .btn-inic:hover{
         margin-top: 15px;
-        border-radius: 10%;
+        border-radius: 45px;
         padding: 10px 15px;
         border: 2px solid white;
         background: linear-gradient(to right, #fc785af0, #d8363a, #AD3636, #7f1b33);;

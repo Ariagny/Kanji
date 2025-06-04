@@ -181,7 +181,7 @@
     margin-left: 25px;
     border: none;
     outline: none;
-    border-radius: 15px;
+    border-radius: 45px;
     font-size:15px ;
     color: white;
     font-weight: 600;
@@ -194,7 +194,7 @@
     margin-left: 25px;
     border: none;
     outline: none;
-    border-radius: 15px;
+    border-radius: 45px;
     font-size:15px ;
     color: white;
     font-weight: 600;
@@ -209,7 +209,7 @@
     margin-left: 25px;
     border: none;
     outline: none;
-    border-radius: 15px;
+    border-radius: 45px;
     font-size:15px ;
     color: white;
     font-weight: 600;
@@ -242,7 +242,7 @@
 }
 
 .popup-caja{
-    border-radius: 10px;
+    border-radius: 45px;
     padding: 150px 0px 50px 0;
     max-width: 900px;
     min-width: 300px;
@@ -292,7 +292,7 @@ margin: -120px 30px 10px 0;
 
 .pop-btn{
     margin-top: 25px;
-    border-radius: 15px;
+    border-radius: 45px;
     padding: 10px 15px;
     border: 2px solid white;
     background-color: white;

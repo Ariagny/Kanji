@@ -124,12 +124,6 @@
     
 }
   
-  .avatar-container img {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-  }
-  
   /* Barras de progreso más llamativas */
   .progress-custom {
     height: 20px;
@@ -146,7 +140,7 @@
   .btn-des{
     background: #4b4b4b;
     border: none;
-    border-radius: 10px;
+    border-radius: 45px;
     color: white;
     padding: 5px 5px;
 /*     cursor: not-allowed !important; */

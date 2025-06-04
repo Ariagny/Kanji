@@ -1,0 +1,253 @@
+/* barra menu */
+.cont{
+    background-color: #7f1b33;
+}
+.heade{
+    z-index: 25;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-logo{
+    width: 100px;
+    margin: 10px 0 0 15px;
+}
+#navbarNav{
+    justify-content: space-between;
+}
+
+#navbarNav a{
+    color: white;
+}
+
+.btn-nav{
+    color: white;
+}
+
+.nav-link1{
+    margin: auto 5px;
+    
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-link4{
+    margin: auto 5px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-link5{
+    margin: auto 5px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-link6{
+    text-transform: capitalize;
+    margin: auto 5px;
+    color: white;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-list{
+    margin: auto 5px;
+    color: white;
+    font-size: large;
+    display: none;
+    text-decoration: none;
+}
+
+.nav-link7{
+    margin: auto 5px;
+    display: none;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-link8{
+    margin: auto 5px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-ini{
+    margin-right: 5px;
+}
+
+.nav-in{
+    display: flex;
+    margin-right: 5px;
+    font-size: 35px;
+}
+
+.nav-reg{
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none!important;
+}
+
+ .container1{
+    position: relative;
+    padding: 1rem;
+    max-width: 1000px;
+    max-height: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .certificate{
+    background-image: url(../Sources/img/Blue\ White\ Abstract\ Geometric\ Certificate\ of\ Appreciation.png) ;
+    background-size: 100% 100%;
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+    border: 2px solid #7f1b33;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height:550px;
+ }
+
+ /* Contenido */
+ .sect{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .titulo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .tit1{
+    color:#7f1b33;
+    font-size: 50px;
+    font-weight: 700;
+ }
+
+ 
+ .tit2{
+    color:#000000;
+    font-size: 25px;
+    font-weight:400;
+ }
+
+
+ .Otorgado{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .otor1{
+    color:#000000;
+    font-size: 16px;
+    font-weight: 400;
+ }
+
+ .otor2{
+    color:#000000;
+    font-size: 20px;
+    font-weight:400;
+ }
+
+ .otor3{
+    color:#7f1b33;
+    font-weight:600;
+    margin: -43px 0 0 0;
+ }
+
+
+ .texto{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .tex1{
+    color:#000000;
+    font-size: 18px;
+    font-weight: 450;
+    width: 70%;
+    text-align: center;
+ }
+
+ .firmas{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 90px;
+ }
+ .Autor1{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .Autor2{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .firm1{
+    width: 70px;
+    margin: 0 0 -30px 0;
+ }
+
+ .firm2{
+    color:#7f1b33;
+    font-weight:600;
+ }
+
+ .firm3{
+    color:#000000;
+    font-size: 20px;
+    font-weight:600;
+ }
+
+ .Log1{
+    width: 60px;
+    margin: -10px 0 0 25px;
+ }
+
+ 
+ #descargarPDF{
+    margin-top: 15px;
+    border-radius: 45px;
+    padding: 10px 15px;
+    border: 2px solid white;
+    background: linear-gradient(to right, #fc785af0, #d8363a, #AD3636, #7f1b33);;
+    color: white;
+    font-weight: 600;
+}
