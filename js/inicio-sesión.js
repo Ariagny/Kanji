@@ -2,6 +2,7 @@
 const Username = document.querySelector(".Username");
 const Password = document.querySelector(".Password");
 const formulario = document.querySelector(".formulario");
+const btnInvitado = document.querySelector(".btn-inv");
 
 let usuarios = JSON.parse(localStorage.getItem("usuarios"))  || [];
 
@@ -10,7 +11,7 @@ function validarUsuario (e){
     e.preventDefault();
     //llamar la información de local storage
     for (let i = 0; i < usuarios.length; i++) {
-      if (Username.value === usuarios[i].userNU && Password.value === usuarios[i].userP){
+      if (Username.value === usuarios[i].userU && Password.value === usuarios[i].userP){
     
         window.location = "../index.html"
         usuarios[i].userLogged = true
@@ -23,3 +24,28 @@ formulario.reset()
 }
 
 formulario.addEventListener("submit", validarUsuario)
+
+//Modo invitado
+function registrarInvitado(e){
+    e.preventDefault();
+    let user = {
+        userU: "Invitado",
+        userNombre: ".",
+        userP: "none",
+        userC:  "none",
+        userLogged: true,
+        certificado: false,
+        progreso: 0,
+        progreso1: 0,
+        progreso2: 0,
+        progreso3: 0,
+    }
+    //enviar información a local storage
+
+    let usuarios = JSON.parse(localStorage.getItem("usuarios"))  || [];
+    usuarios.push(user)
+    localStorage.setItem("usuarios", JSON.stringify(usuarios));   
+    window.location = "../index.html"
+}
+
+btnInvitado.addEventListener("click",registrarInvitado)

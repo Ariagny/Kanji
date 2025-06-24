@@ -32,6 +32,13 @@
     text-decoration: none;
 }
 
+.nav-link2{
+    margin: auto 5px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
 .nav-link4{
     margin: auto 5px;
     display: flex;
@@ -234,8 +241,8 @@ iframe{
     }
 
     iframe{
-        width: 230px;
-        height: 115px;
+        width: 390px;
+        height: 215px;
         cursor: not-allowed;
 }
 }

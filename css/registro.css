@@ -45,13 +45,32 @@
         background-color: white;
         font-weight: 600;
     }
-
+    
     .btn-inic:hover{
         margin-top: 15px;
         border-radius: 45px;
         padding: 10px 15px;
         border: 2px solid white;
         background: linear-gradient(to right, #fc785af0, #d8363a, #AD3636, #7f1b33);;
+        color: white;
+        font-weight: 600;
+    }
+        .btn-inv {
+        margin-top: 15px;
+        border-radius: 45px;
+        padding: 5px 10px;
+        color: #ffffff;
+        border: 2px solid  #a5a3a3;
+        background-color: rgb(141, 136, 136);
+        font-weight: 600;
+    }
+
+        .btn-inv:hover{
+        margin-top: 15px;
+        border-radius: 45px;
+        padding: 5px 10px;
+        border: 2px solid rgb(141, 136, 136);
+        background: rgb(104, 103, 103);
         color: white;
         font-weight: 600;
     }

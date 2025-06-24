@@ -32,6 +32,12 @@
     text-decoration: none;
 }
 
+.nav-link2{
+    margin: auto 5px;
+    display: flex; 
+    align-items: center;
+    text-decoration: none;
+}
 
 .nav-link4{
     margin: auto 5px;

@@ -6,7 +6,7 @@ let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 const verificar = usuarios.every((item) => item.userLogged === false);
 
 verificar ? window.location = "../index.html" : null
-
+const SobreNosostros = document.querySelector(".nav-link2");
 const btnIniciarSesion = document.querySelector(".nav-link4");
 const btnRegistroSesion = document.querySelector(".nav-link5");
 const SaludoUsuario = document.querySelector(".nav-link6");
@@ -24,7 +24,7 @@ function verificarSesion(){
 
     if (confirmarSesion){
         //si hay un usuario logueado, mostrarsu nombre y ocultar botones
-        SaludoUsuario.textContent =`Hola, ${usuarios[i].userNU}`;
+        SaludoUsuario.textContent =`Hola, ${usuarios[i].userU}`;
         btnIniciarSesion.style.display = 'none';
         btnRegistroSesion.style.display = 'none';
         btnUsuario.style.display = 'flex';

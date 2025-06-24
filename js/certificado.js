@@ -1,6 +1,6 @@
 /* const btnModulo1 = document.querySelector(".nav-link1");
-const btnModulo2 = document.querySelector(".nav-link2");
 const btnModulo3 = document.querySelector(".nav-link3"); */
+const SobreNosostros = document.querySelector(".nav-link2");
 const btnIniciarSesion = document.querySelector(".nav-link4");
 const btnRegistroSesion = document.querySelector(".nav-link5");
 const SaludoUsuario = document.querySelector(".nav-link6");
@@ -18,13 +18,14 @@ function verificarSesion() {
 
     if (confirmarSesion) {
       //si hay un usuario logueado, mostrarsu nombre y ocultar botones
-
+      SobreNosostros.style.display = "flex";
       btnIniciarSesion.style.display = "none";
       btnRegistroSesion.style.display = "none";
       btnCerrarSesion.style.display = "flex";
       return;
     }
   }
+  SobreNosostros.style.display = "flex";
   btnIniciarSesion.style.display = "flex";
   btnRegistroSesion.style.display = "flex";
   btnlist.classList.add("d-none");
@@ -56,7 +57,7 @@ function NombreUsuario() {
 
     if (confirmarSesion) {
       //si hay un usuario logueado, mostrarsu nombre y ocultar botones
-      NombreU.textContent = `${usuarios[i].userNU}`;
+      NombreU.textContent = `${usuarios[i].userU}`;
       return;
     }
   }
@@ -95,6 +96,7 @@ document.addEventListener("DOMContentLoaded", Barrras);
 //descargar certificado
 
 const BtnDescargar = document.querySelector(".btn-des");
+const enlaceDescargar = document.querySelector(".enla-des");
 
 function activarDescarga() {
   for (let i = 0; i < usuarios.length; i++) {
@@ -102,6 +104,7 @@ function activarDescarga() {
       /* BtnDescargar.style.cursor = 'pointer!important'; */
       BtnDescargar.style.background = "#7f1b33";
       BtnDescargar.disabled = false;
+      enlaceDescargar.style.pointerEvents = "all"
       usuarios[i].certificado = true
         localStorage.setItem("usuarios", JSON.stringify(usuarios))
       return

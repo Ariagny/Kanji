@@ -1,15 +1,5 @@
-const btnIniciarSesion = document.querySelector(".nav-link4");
-const btnRegistroSesion = document.querySelector(".nav-link5");
-const SaludoUsuario = document.querySelector(".nav-link6");
-const btnUsuario = document.querySelector(".nav-link7");
-const btnlist = document.querySelector(".nav-list");
-const BarrraNav = document.querySelector("#navbarNav");
-const btnCerrarSesion = document.querySelector(".nav-link8");
-
-
 let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
-
-//verifica si el usuario esta registrado
+const SaludoUsuario = document.querySelector(".otor2");
 function verificarSesion(){
    /*  let currentUser = JSON.parse(localStorage.getItem('user')); */
    for (let i = 0; i < usuarios.length; i++) {
@@ -17,35 +7,35 @@ function verificarSesion(){
 
     if (confirmarSesion){
         //si hay un usuario logueado, mostrarsu nombre y ocultar botones
-        SaludoUsuario.textContent =`Hola, ${usuarios[i].userNU}`;
-        btnIniciarSesion.style.display = 'none';
-        btnRegistroSesion.style.display = 'none';
-        btnUsuario.style.display = 'flex';
-        btnCerrarSesion.style.display = "flex"  
+        SaludoUsuario.textContent =`${usuarios[i].userNombre}`;
         return
     }
 }
-SaludoUsuario.textContent = '';
-btnIniciarSesion.style.display = 'flex';
-btnRegistroSesion.style.display = 'flex';
-btnlist.classList.add('d-none');
-btnlist.classList.remove('d-flex');
-BarrraNav.style.justifyContent = "right"
-btnCerrarSesion.style.display = "none" 
 
 }
 
 document.addEventListener('DOMContentLoaded', verificarSesion);
+//Descargar certificado
+/* 1.Capturar boton de certificado */
+document.getElementById("descargarPDF").addEventListener("click" , () => {
+    const certificado = document.querySelector(".certificate") 
 
-function cerrarSesion (){
+    const options ={
+        margin: 10,
+        filename: "ejemplo.pdf",
+        image: {type: "pdf", quality: 0.98},
+        html2canvas: { scale: 2 },
+        jsPDF: {
+            unit:"px",
+            format: [570,1010],
+            orientation: "landscape"
+        }
+    }
 
-    for (let i = 0; i < usuarios.length; i++) {
-    if(usuarios[i].userLogged){
-        usuarios[i].userLogged = false
-        localStorage.setItem("usuarios", JSON.stringify(usuarios))
-        window.location = "../index.html"
-    }
-    }
-    }
-    
-btnCerrarSesion.addEventListener("click",cerrarSesion)
+    html2pdf().set(options).from(certificado).toPdf().get("pdf").then(
+        function (pdf){
+            const newWindow = window.open(pdf.output("bloburl", "_blank"))
+        }
+    );
+})
+

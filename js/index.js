@@ -1,15 +1,5 @@
-/* 1. Si el video esta terminado y el pdf descargado se activa el examen
-   2. Si el examen se aprueba el módulo siguiente se desloque
-   3. El progreso se refleja en el dashboard 
 
-
-*/
-
-
-
-/* const btnModulo1 = document.querySelector(".nav-link1");
-const btnModulo2 = document.querySelector(".nav-link2");
-const btnModulo3 = document.querySelector(".nav-link3"); */
+const SobreNosostros = document.querySelector(".nav-link2");
 const btnIniciarSesion = document.querySelector(".nav-link4");
 const btnRegistroSesion = document.querySelector(".nav-link5");
 const SaludoUsuario = document.querySelector(".nav-link6");
@@ -29,7 +19,7 @@ function verificarSesion(){
 
     if (confirmarSesion){
         //si hay un usuario logueado, mostrarsu nombre y ocultar botones
-        SaludoUsuario.textContent =`Hola, ${usuarios[i].userNU}`;
+        SaludoUsuario.textContent =`Hola, ${usuarios[i].userU}`;
         btnIniciarSesion.style.display = 'none';
         btnRegistroSesion.style.display = 'none';
         btnUsuario.style.display = 'flex';

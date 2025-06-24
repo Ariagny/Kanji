@@ -22,21 +22,23 @@ function verificarSesion(){
         btnIniciarSesion.style.display = 'none';
         btnRegistroSesion.style.display = 'none';
         btnUsuario.style.display = 'flex';
-        btnCerrarSesion.style.display = "flex"  
+        btnCerrarSesion.style.display = "flex" 
         return
-    }
-}
-SaludoUsuario.textContent = '';
-btnIniciarSesion.style.display = 'flex';
-btnRegistroSesion.style.display = 'flex';
-btnlist.classList.add('d-none');
-btnlist.classList.remove('d-flex');
-BarrraNav.style.justifyContent = "right"
-btnCerrarSesion.style.display = "none" 
-
+    }    
+   }        
+   SaludoUsuario.textContent = '';
+   btnIniciarSesion.style.display = 'flex';
+   btnRegistroSesion.style.display = 'flex';
+   btnlist.classList.add('d-none');
+   btnlist.classList.remove('d-flex');
+   BarrraNav.style.justifyContent = "right"
+   btnCerrarSesion.style.display = "none" 
+    
 }
 
 document.addEventListener('DOMContentLoaded', verificarSesion);
+
+
 
 function cerrarSesion (){
 
@@ -50,35 +52,3 @@ function cerrarSesion (){
     }
     
 btnCerrarSesion.addEventListener("click",cerrarSesion)
-
-//Validar usuario
-
-const PopUp = document.querySelector(".popup");
-const Sect = document.querySelector(".sect");
-const BtnDescargar = document.querySelector(".enlace-pdf");
-const BtnExa = document.querySelector(".flech");
-
-function AccesoModulos(){
-    /*  let currentUser = JSON.parse(localStorage.getItem('user')); */
-    for (let i = 0; i < usuarios.length; i++) {
-        let confirmarSesion = usuarios[i] ? usuarios[i].userLogged : false
-    
-     
-         if (confirmarSesion){
-             //si hay un usuario logueado, mostrarsu nombre y ocultar botones
-             
-             PopUp.style.display = 'none';
-             Sect.style.filter = 'none';
-             BtnDescargar.style.cursor = 'Pointer';
-             BtnExa.style.cursor = 'Pointer';  
-             return
-         }
-        }
-        PopUp.style.display = 'flex';
-        Sect.style.filter = 'blur(15px)';
-        BtnDescargar.style.cursor = 'not-allowed';
-        BtnExa.style.cursor = 'not-allowed';  
-
- }
-
- document.addEventListener('DOMContentLoaded', AccesoModulos);
