@@ -33,9 +33,23 @@ body {
 .desc{
     color: white;
 }
+.mb-3{
+    display: flex;
+    justify-content: center;
+}
+.form-control{
+    width: 90% !important;
+}
 
+.btn-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 .btn-custom {
+    width: 50%;
   background-color: #ffffff;
   border: none;
   color: #7f1b33;
@@ -52,12 +66,20 @@ body {
     color: white;
 }
 
+.img-gato{
+    margin-top: 20px;
+    width: 400px;
+}
 
 @media(max-width:576px){
-
+.img-gato{
+    width: 300px;
+}
 }
 
 @media(min-width:992px){
-
+.img-gato{
+    width: 450px;
+}
 }
 
