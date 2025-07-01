@@ -40,24 +40,27 @@
         border-radius: 45px !important;
     }
     .btn-inic {
+        width: 100%;
         margin-top: 15px;
         border-radius: 45px;
-        padding: 10px 15px;
+        padding: 5px 10px;
         border: 2px solid  #d8363a;
         background-color: white;
         font-weight: 600;
     }
     
     .btn-inic:hover{
+        width: 100%;
         margin-top: 15px;
         border-radius: 45px;
-        padding: 10px 15px;
+        padding: 5px 10px;
         border: 2px solid white;
         background: linear-gradient(to right, #fc785af0, #d8363a, #AD3636, #7f1b33);;
         color: white;
         font-weight: 600;
     }
         .btn-inv {
+        width: 100%;
         margin-top: 15px;
         border-radius: 45px;
         padding: 5px 10px;
@@ -68,6 +71,7 @@
     }
 
         .btn-inv:hover{
+        width: 100%;
         margin-top: 15px;
         border-radius: 45px;
         padding: 5px 10px;

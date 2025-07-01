@@ -26,26 +26,18 @@ formulario.reset()
 formulario.addEventListener("submit", validarUsuario)
 
 //Modo invitado
-function registrarInvitado(e){
+function IniciarInvitado (e){
     e.preventDefault();
-    let user = {
-        userU: "Invitado",
-        userNombre: ".",
-        userP: "none",
-        userC:  "none",
-        userLogged: true,
-        certificado: false,
-        progreso: 0,
-        progreso1: 0,
-        progreso2: 0,
-        progreso3: 0,
+    //llamar la información de local storage
+    for (let i = 0; i < usuarios.length; i++) {
+      if (usuarios[i].userU === "Invitado"){
+    
+        window.location = "../index.html"
+        usuarios[i].userLogged = true
+        localStorage.setItem("usuarios", JSON.stringify(usuarios))
+        return
     }
-    //enviar información a local storage
-
-    let usuarios = JSON.parse(localStorage.getItem("usuarios"))  || [];
-    usuarios.push(user)
-    localStorage.setItem("usuarios", JSON.stringify(usuarios));   
-    window.location = "../index.html"
+  }
 }
 
-btnInvitado.addEventListener("click",registrarInvitado)
+btnInvitado.addEventListener("click", IniciarInvitado)

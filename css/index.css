@@ -571,8 +571,15 @@ margin: -120px 30px 50px 0;
     font-weight: 600;
     width: 80%;
     height: 40px;
-    margin-top: 120px;
+    margin-top: 10px;
     margin-bottom: 25px;
+}
+
+.icon-pdf{
+    font-size: 20px;
+    margin-top: 50px;
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .enla-c{

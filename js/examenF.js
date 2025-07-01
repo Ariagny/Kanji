@@ -102,16 +102,16 @@ function ValidarRespuestas(e){
     e.preventDefault()
 const respuestasUser = capturarRespuestas()
 const respuestasCorrectas = {
-    p1:"Azul",
-    p2:"Fútbol",
-    p3:"Pizza",
-    p4:"Pop",
-    p5:"Gato",
-    p6:"Invierno",
-    p7:"Chocolate",
-    p8:"Playa",
-    p9:"Profundizaciónweb",
-    p10:"Chocolate",
+    p1:"1-3",
+    p2:"2-4",
+    p3:"3-2",
+    p4:"4-2",
+    p5:"5-1",
+    p6:"6-4",
+    p7:"7-3",
+    p8:"8-3",
+    p9:"9-1",
+    p10:"10-2",
 }
 let acumulado = 0;
 
@@ -173,7 +173,7 @@ for (let i = 0; i < usuarios.length; i++) {
       TextoSig.style.display = "none";
       BtnExa.style.cursor = "not-allowed";
       localStorage.setItem("usuarios", JSON.stringify(usuarios));
-    } else {
+    } else if (usuarios[i].userLogged && acumulado === 1 || acumulado == 2 || acumulado == 3 || acumulado == 4 || acumulado == 5 || acumulado == 6) {
       PopUp.style.display = "flex";
       iconF.style.display = "none";
       Sect1.style.filter = "blur(5px)";

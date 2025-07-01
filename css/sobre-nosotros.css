@@ -108,6 +108,239 @@
 }
 
 
+.t-intro{
+    margin-bottom: 50px;
+    color: #000000;
+}
+
+.t-tit{
+    margin-top: 50px;
+    color: #AD3636;
+}
+
+.desc-k{
+    margin:  10px auto;
+    text-align: center;
+    width: 80%;
+}
+.imgbanner{
+    width: 400px;
+    height: auto;
+    display: flex;
+    margin: 20px auto 50px auto;
+}
+
+
+
+.revistas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.rev{
+    width: 70%;
+    height: 500px;
+    margin-bottom: 25px;
+}
+
+.img-grupal{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sect-niño{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.t-niño{
+    margin-top: 25px;
+}
+.img-niño{
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sect-chico{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.t-chico{
+    margin-top: 25px;
+}
+.img-chico{
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sect-hombre{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.t-hombre{
+    margin-top: 25px;
+}
+.img-hombre{
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sect-gato{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.t-gato{
+    margin-top: 25px;
+}
+.img-gato{
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sect-niña{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.t-niña{
+    margin-top: 25px;
+}
+.img-niña{
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sect-chica{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.t-chica{
+    margin-top: 25px;
+}
+.img-chica{
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sect-mujer{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.t-mujer{
+    margin-top: 25px;
+}
+.img-mujer{
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+@media(max-width:576px){
+.desc-k{
+    margin: auto;
+    text-align: center;
+    width: 80%;
+}
+
+.imgbanner{
+    width: 290px;
+    height: auto;
+    display: flex;
+    margin: 20px auto 50px auto;
+}
+
+.revistas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.rev{
+    margin-bottom: 25px;
+    width: 80%;
+    height: 500px;
+}
+
+}
+
+
+@media(min-width:992px){
+.rev{
+    width: 40%;
+    height: 500px;
+}
+
+.revistas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.img-grupal{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+}
+
+
 
 /* footer */
 

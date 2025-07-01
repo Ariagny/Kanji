@@ -1,6 +1,117 @@
+/* barra menu */
+.cont{
+    background-color: #7f1b33;
+}
+.heade{
+    z-index: 25;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-logo{
+    width: 100px;
+    margin: 10px 0 0 15px;
+}
+#navbarNav{
+    justify-content: space-between;
+}
+
+#navbarNav a{
+    color: white;
+}
+
+.btn-nav{
+    color: white;
+}
+
+.nav-link1{
+    margin: auto 5px;
+    
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-link2{
+    margin: auto 5px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-link4{
+    margin: auto 5px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-link5{
+    margin: auto 5px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-link6{
+    text-transform: capitalize;
+    margin: auto 5px;
+    color: white;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-list{
+    margin: auto 5px;
+    color: white;
+    font-size: large;
+    display: none;
+    text-decoration: none;
+}
+
+.nav-link7{
+    margin: auto 5px;
+    display: none;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-link8{
+    margin: auto 5px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-ini{
+    margin-right: 5px;
+}
+
+.nav-in{
+    display: flex;
+    margin-right: 5px;
+    font-size: 35px;
+}
+
+.nav-reg{
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none!important;
+}
+
+
+
+
 body {
     color: white;
-    min-height: 100vh;
     justify-content: center;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -9,7 +120,7 @@ body {
   
 
 .container1 {
-    margin: 130px auto;
+    margin: 45px auto;
     width: 90%;
     max-width: 700px;
     padding: 30px;

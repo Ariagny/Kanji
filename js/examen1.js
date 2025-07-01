@@ -102,11 +102,11 @@ function ValidarRespuestas(e) {
   e.preventDefault();
   const respuestasUser = capturarRespuestas();
   const respuestasCorrectas = {
-    p1: "Azul",
-    p2: "Fútbol",
-    p3: "Pizza",
-    p4: "Pop",
-    p5: "Gato",
+    p1: "1-2",
+    p2: "2-3",
+    p3: "3-4",
+    p4: "4-2",
+    p5: "5-2",
   };
   let acumulado = 0;
 
@@ -166,7 +166,7 @@ function ValidarRespuestas(e) {
       TextoSig.style.display = "none";
       BtnExa.style.cursor = "not-allowed";
       
-    } else {
+    } else if (usuarios[i].userLogged && acumulado === 1 || acumulado == 2) {
       PopUp.style.display = "flex";
       iconF.style.display = "none";
       Sect1.style.filter = "blur(5px)";

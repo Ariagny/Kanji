@@ -14,12 +14,14 @@ function verificarSesion(){
 
 }
 
+
+
 document.addEventListener('DOMContentLoaded', verificarSesion);
 //Descargar certificado
 /* 1.Capturar boton de certificado */
 document.getElementById("descargarPDF").addEventListener("click" , () => {
     const certificado = document.querySelector(".certificate") 
-
+    console.log(certificado)
     const options ={
         margin: 10,
         filename: "ejemplo.pdf",
