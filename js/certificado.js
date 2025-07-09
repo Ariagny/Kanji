@@ -100,7 +100,7 @@ const enlaceDescargar = document.querySelector(".enla-des");
 
 function activarDescarga() {
   for (let i = 0; i < usuarios.length; i++) {
-    if (usuarios[i].userLogged && usuarios[i].progreso === 100) {
+    if (usuarios[i].userLogged && usuarios[i].progreso1 === 100) {
       /* BtnDescargar.style.cursor = 'pointer!important'; */
       BtnDescargar.style.background = "#7f1b33";
       BtnDescargar.disabled = false;
